@@ -627,7 +627,8 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            padding: 24px;
+            padding: 0;
+            position: relative;
         }
 
         /* RESULTS SECTION */
@@ -1647,11 +1648,11 @@
 
         // ─── CASE STUDIES: GENERATE 3D CONVEYOR CARDS ───────────────────────────
         const caseProjects = [
-            { title: 'Moda', category: 'E-commerce', color: '#ff3366' },
-            { title: 'Salud', category: 'Healthcare', color: '#00ccff' },
-            { title: 'Gastronomía', category: 'Restaurant', color: '#ffaa00' },
-            { title: 'Educación', category: 'EdTech', color: '#00dd00' },
-            { title: 'E-commerce', category: 'Retail', color: '#aa00ff' },
+            { title: 'Aurora Moda', category: 'Luxury Fashion', image: 'case-study-1-moda-es.png' },
+            { title: 'Active Vibe', category: 'Athletic Wear', image: 'case-study-2-deportes-es.png' },
+            { title: 'Aurora Skincare', category: 'Beauty & Care', image: 'case-study-3-belleza-es.png' },
+            { title: 'Villa Design', category: 'Furniture', image: 'case-study-4-muebles-es.png' },
+            { title: 'Urban Arcade', category: 'Streetwear', image: 'case-study-5-casual-es.png' },
         ];
 
         function generateCaseCards() {
@@ -1690,9 +1691,15 @@
 
                 const mockupBody = document.createElement('div');
                 mockupBody.className = 'mockup-body';
+                mockupBody.style.backgroundImage = `url('${project.image}')`;
+                mockupBody.style.backgroundSize = 'cover';
+                mockupBody.style.backgroundPosition = 'center';
+                mockupBody.style.backgroundRepeat = 'no-repeat';
                 mockupBody.innerHTML = `
-                    <h3 style="margin: 0 0 8px; font-size: 24px; font-weight: 600;">${project.title}</h3>
-                    <p style="margin: 0; font-size: 13px; opacity: 0.7;">${project.category}</p>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);">
+                        <h3 style="margin: 0 0 4px; font-size: 18px; font-weight: 600; color: white;">${project.title}</h3>
+                        <p style="margin: 0; font-size: 12px; color: rgba(255,255,255,0.8);">${project.category}</p>
+                    </div>
                 `;
 
                 card.appendChild(mockupBar);
