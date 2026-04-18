@@ -531,6 +531,9 @@
             transition: opacity 0.5s ease, transform 0.5s ease;
             transform: scale(1.04);
             border-radius: 16px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .service-visual.active {
             opacity: 1;
@@ -1191,12 +1194,12 @@
 
                 <!-- RIGHT: sticky visual panel -->
                 <div class="services-right">
-                    <div class="service-visual active" data-visual="0" style="background: linear-gradient(135deg,#1e3a5f,#1e40af); color:rgba(255,255,255,0.15);">🛒</div>
-                    <div class="service-visual" data-visual="1" style="background: linear-gradient(135deg,#312e81,#6366f1); color:rgba(255,255,255,0.15);">🎨</div>
-                    <div class="service-visual" data-visual="2" style="background: linear-gradient(135deg,#0f4c3a,#10b981); color:rgba(255,255,255,0.15);">⚙️</div>
-                    <div class="service-visual" data-visual="3" style="background: linear-gradient(135deg,#3b0764,#9333ea); color:rgba(255,255,255,0.15);">🔍</div>
-                    <div class="service-visual" data-visual="4" style="background: linear-gradient(135deg,#1c1917,#f97316); color:rgba(255,255,255,0.15);">⚡</div>
-                    <div class="service-visual" data-visual="5" style="background: linear-gradient(135deg,#0c4a6e,#0ea5e9); color:rgba(255,255,255,0.15);">🚀</div>
+                    <div class="service-visual active" data-visual="0" style="background-image: url('service-ecommerce-banner.png');"></div>
+                    <div class="service-visual" data-visual="1" style="background-image: url('service-design-banner.png');"></div>
+                    <div class="service-visual" data-visual="2" style="background-image: url('service-payments-banner.png');"></div>
+                    <div class="service-visual" data-visual="3" style="background-image: url('service-optimization-banner.png');"></div>
+                    <div class="service-visual" data-visual="4" style="background-image: url('service-marketing-banner.png');"></div>
+                    <div class="service-visual" data-visual="5" style="background-image: url('service-support-banner.png');"></div>
                 </div>
 
             </div>
@@ -1648,11 +1651,11 @@
 
         // ─── CASE STUDIES: GENERATE 3D CONVEYOR CARDS ───────────────────────────
         const caseProjects = [
-            { title: 'Aurora Moda', category: 'Luxury Fashion', image: 'case-study-1-moda-es.png' },
-            { title: 'Active Vibe', category: 'Athletic Wear', image: 'case-study-2-deportes-es.png' },
-            { title: 'Aurora Skincare', category: 'Beauty & Care', image: 'case-study-3-belleza-es.png' },
-            { title: 'Villa Design', category: 'Furniture', image: 'case-study-4-muebles-es.png' },
-            { title: 'Urban Arcade', category: 'Streetwear', image: 'case-study-5-casual-es.png' },
+            { title: 'Aura Moda', category: 'Luxury Fashion', image: 'carousel-1-moda.png' },
+            { title: 'Apex Active', category: 'Athletic Wear', image: 'carousel-2-deportes.png' },
+            { title: 'Aurelia', category: 'Skincare', image: 'carousel-3-belleza.png' },
+            { title: 'Villa Design', category: 'Furniture', image: 'carousel-4-muebles.png' },
+            { title: 'Urban Vibes', category: 'Streetwear', image: 'carousel-5-casual.png' },
         ];
 
         function generateCaseCards() {
