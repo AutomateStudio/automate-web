@@ -2211,10 +2211,13 @@
             document.body.style.background = rgb(bgColor);
             document.body.style.color      = rgb(textColor);
 
-            // Also tint all sections to transparent so body color shows through
+            // Only tint sections that don't have their own fixed background
+            const fixedBgIds = ['comparacion','como-funciona','pre-requisitos','proceso-operativo','templates','metricas','precios','correcciones'];
             document.querySelectorAll('section').forEach(s => {
-                s.style.background = 'transparent';
-                s.style.color      = 'inherit';
+                if (!fixedBgIds.includes(s.id)) {
+                    s.style.background = 'transparent';
+                    s.style.color      = 'inherit';
+                }
             });
 
             // Update card backgrounds relative to current brightness
