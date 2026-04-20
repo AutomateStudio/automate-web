@@ -1198,123 +1198,269 @@
     </section>
 
     <!-- PRE-REQUISITOS -->
-    <section id="pre-requisitos" style="padding:120px 60px; background:#f1f5f9;">
-        <div class="container">
-            <div style="margin-bottom:64px;">
-                <div style="font-size:12px;font-weight:700;letter-spacing:3px;color:#ef4444;text-transform:uppercase;margin-bottom:16px">Pre-Requisitos</div>
-                <h2 style="font-size:clamp(32px,4vw,52px);font-weight:900;color:#0f172a;letter-spacing:-1.5px;line-height:1.1;margin:0 0 16px">Que Necesita el Cliente</h2>
-                <p style="font-size:17px;color:#64748b;max-width:560px;line-height:1.7;margin:0;">Todo debe estar listo antes del Día 1. Sin excepciones.</p>
+    <section id="pre-requisitos" style="padding:140px 60px; background:#050810; position:relative; overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 900px 700px at 75% 50%, rgba(99,102,241,0.07) 0%, transparent 70%);pointer-events:none;"></div>
+        <div style="position:absolute;top:-300px;right:-300px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle, rgba(239,68,68,0.05) 0%, transparent 70%);pointer-events:none;"></div>
+        <div class="container" style="position:relative;z-index:1;">
+            <!-- Header split -->
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:72px;flex-wrap:wrap;gap:32px;">
+                <div>
+                    <div style="font-size:11px;font-weight:700;letter-spacing:4px;color:#ef4444;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:12px;"><span style="width:32px;height:1px;background:#ef4444;display:inline-block;"></span>Pre-Requisitos</div>
+                    <h2 style="font-size:clamp(36px,4.5vw,58px);font-weight:900;color:#fff;letter-spacing:-2px;line-height:1.05;margin:0 0 20px;">Lo que necesitamos<br><span style="color:#ef4444;">antes del Día 1</span></h2>
+                    <p style="font-size:16px;color:rgba(255,255,255,0.45);max-width:460px;line-height:1.8;margin:0;">Sin estos elementos no iniciamos el proyecto. Este checklist garantiza que podamos entregarte resultados en tiempo récord, sin demoras ni sorpresas.</p>
+                </div>
+                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:24px;padding:36px 44px;text-align:center;flex-shrink:0;">
+                    <div style="font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:12px;letter-spacing:2px;text-transform:uppercase;">Checklist de inicio</div>
+                    <div style="font-size:64px;font-weight:900;color:#fff;line-height:1;margin-bottom:8px;letter-spacing:-3px;">6<span style="font-size:24px;color:rgba(255,255,255,0.2);font-weight:400;"> ítems</span></div>
+                    <div style="font-size:13px;color:#10b981;font-weight:700;letter-spacing:0.5px;margin-bottom:20px;">todos obligatorios</div>
+                    <div style="height:4px;background:rgba(255,255,255,0.06);border-radius:4px;overflow:hidden;"><div style="height:100%;width:100%;background:linear-gradient(90deg,#ef4444,#7c3aed);border-radius:4px;"></div></div>
+                </div>
             </div>
-            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:1000px;">
-                <div class="fade-in" style="background:#fff;border-radius:16px;padding:28px 32px;border:1px solid #e2e8f0;display:flex;gap:20px;align-items:flex-start;">
-                    <span style="font-size:32px;flex-shrink:0">🎨</span>
-                    <div>
-                        <h4 style="font-size:17px;font-weight:800;color:#0f172a;margin:0 0 8px;">Assets Visuales</h4>
-                        <p style="font-size:14px;color:#64748b;margin:0;line-height:1.7;">Logo en alta resolución (SVG o PNG transparente), fotos de productos sobre fondo blanco o lifestyle, banner principal, favicon.</p>
-                    </div>
+
+            <!-- 3-col card grid -->
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:32px;position:relative;overflow:hidden;cursor:default;transition:border-color 0.25s,background 0.25s;" onmouseover="this.style.borderColor='rgba(239,68,68,0.4)';this.style.background='rgba(239,68,68,0.04)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.background='rgba(255,255,255,0.03)'">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#ef4444,transparent);"></div>
+                    <div style="width:52px;height:52px;border-radius:16px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:24px;">🎨</div>
+                    <h4 style="font-size:17px;font-weight:800;color:#fff;margin:0 0 10px;letter-spacing:-0.3px;">Assets Visuales</h4>
+                    <p style="font-size:13.5px;color:rgba(255,255,255,0.4);margin:0 0 20px;line-height:1.75;">Logo SVG/PNG transparente, fotos de productos en fondo blanco o lifestyle, banner principal y favicon en alta resolución.</p>
+                    <div style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#ef4444;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:7px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;flex-shrink:0;"></span>Obligatorio</div>
                 </div>
-                <div class="fade-in" style="background:#fff;border-radius:16px;padding:28px 32px;border:1px solid #e2e8f0;display:flex;gap:20px;align-items:flex-start;">
-                    <span style="font-size:32px;flex-shrink:0">📦</span>
-                    <div>
-                        <h4 style="font-size:17px;font-weight:800;color:#0f172a;margin:0 0 8px;">Catálogo de Productos</h4>
-                        <p style="font-size:14px;color:#64748b;margin:0;line-height:1.7;">Lista completa con: nombre, descripción, precio, precio comparativo, SKU, variantes (talla/color), inventario inicial, categorías.</p>
-                    </div>
+                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:32px;position:relative;overflow:hidden;cursor:default;transition:border-color 0.25s,background 0.25s;" onmouseover="this.style.borderColor='rgba(59,130,246,0.4)';this.style.background='rgba(59,130,246,0.04)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.background='rgba(255,255,255,0.03)'">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#3b82f6,transparent);"></div>
+                    <div style="width:52px;height:52px;border-radius:16px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:24px;">📦</div>
+                    <h4 style="font-size:17px;font-weight:800;color:#fff;margin:0 0 10px;letter-spacing:-0.3px;">Catálogo de Productos</h4>
+                    <p style="font-size:13.5px;color:rgba(255,255,255,0.4);margin:0 0 20px;line-height:1.75;">Nombre, descripción, precio, precio comparativo, SKU, variantes (talla/color), inventario inicial y categorías definidas.</p>
+                    <div style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#ef4444;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:7px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;flex-shrink:0;"></span>Obligatorio</div>
                 </div>
-                <div class="fade-in" style="background:#fff;border-radius:16px;padding:28px 32px;border:1px solid #e2e8f0;display:flex;gap:20px;align-items:flex-start;">
-                    <span style="font-size:32px;flex-shrink:0">🎯</span>
-                    <div>
-                        <h4 style="font-size:17px;font-weight:800;color:#0f172a;margin:0 0 8px;">Referentes de Estilo</h4>
-                        <p style="font-size:14px;color:#64748b;margin:0;line-height:1.7;">2–3 URLs de tiendas que le gustan al cliente, con notas sobre qué elementos específicos quiere replicar (layout, colores, tipografía).</p>
-                    </div>
+                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:32px;position:relative;overflow:hidden;cursor:default;transition:border-color 0.25s,background 0.25s;" onmouseover="this.style.borderColor='rgba(124,58,237,0.4)';this.style.background='rgba(124,58,237,0.04)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.background='rgba(255,255,255,0.03)'">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#7c3aed,transparent);"></div>
+                    <div style="width:52px;height:52px;border-radius:16px;background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:24px;">🎯</div>
+                    <h4 style="font-size:17px;font-weight:800;color:#fff;margin:0 0 10px;letter-spacing:-0.3px;">Referentes de Estilo</h4>
+                    <p style="font-size:13.5px;color:rgba(255,255,255,0.4);margin:0 0 20px;line-height:1.75;">2–3 URLs de tiendas de referencia con notas de qué elementos quieres replicar: layout, colores, tipografía.</p>
+                    <div style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#ef4444;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:7px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;flex-shrink:0;"></span>Obligatorio</div>
                 </div>
-                <div class="fade-in" style="background:#fff;border-radius:16px;padding:28px 32px;border:1px solid #e2e8f0;display:flex;gap:20px;align-items:flex-start;">
-                    <span style="font-size:32px;flex-shrink:0">✍️</span>
-                    <div>
-                        <h4 style="font-size:17px;font-weight:800;color:#0f172a;margin:0 0 8px;">Contenido Escrito</h4>
-                        <p style="font-size:14px;color:#64748b;margin:0;line-height:1.7;">Textos para: Sobre Nosotros, FAQ, políticas de envío y devoluciones, descripciones de colecciones, cualquier página adicional.</p>
-                    </div>
+                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:32px;position:relative;overflow:hidden;cursor:default;transition:border-color 0.25s,background 0.25s;" onmouseover="this.style.borderColor='rgba(16,185,129,0.4)';this.style.background='rgba(16,185,129,0.04)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.background='rgba(255,255,255,0.03)'">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#10b981,transparent);"></div>
+                    <div style="width:52px;height:52px;border-radius:16px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:24px;">✍️</div>
+                    <h4 style="font-size:17px;font-weight:800;color:#fff;margin:0 0 10px;letter-spacing:-0.3px;">Contenido Escrito</h4>
+                    <p style="font-size:13.5px;color:rgba(255,255,255,0.4);margin:0 0 20px;line-height:1.75;">Sobre Nosotros, FAQ, políticas de envío y devoluciones, descripciones de colecciones y cualquier página adicional.</p>
+                    <div style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#ef4444;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:7px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;flex-shrink:0;"></span>Obligatorio</div>
                 </div>
-                <div class="fade-in" style="background:#fff;border-radius:16px;padding:28px 32px;border:1px solid #e2e8f0;display:flex;gap:20px;align-items:flex-start;">
-                    <span style="font-size:32px;flex-shrink:0">🌐</span>
-                    <div>
-                        <h4 style="font-size:17px;font-weight:800;color:#0f172a;margin:0 0 8px;">Dominio y Cuenta</h4>
-                        <p style="font-size:14px;color:#64748b;margin:0;line-height:1.7;">Dominio ya comprado o indicar si necesita uno nuevo. Cuenta de Shopify activa (plan seleccionado o trial).</p>
-                    </div>
+                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:32px;position:relative;overflow:hidden;cursor:default;transition:border-color 0.25s,background 0.25s;" onmouseover="this.style.borderColor='rgba(245,158,11,0.4)';this.style.background='rgba(245,158,11,0.04)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.background='rgba(255,255,255,0.03)'">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#f59e0b,transparent);"></div>
+                    <div style="width:52px;height:52px;border-radius:16px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:24px;">🌐</div>
+                    <h4 style="font-size:17px;font-weight:800;color:#fff;margin:0 0 10px;letter-spacing:-0.3px;">Dominio y Cuenta</h4>
+                    <p style="font-size:13.5px;color:rgba(255,255,255,0.4);margin:0 0 20px;line-height:1.75;">Dominio comprado o a contratar. Cuenta Shopify activa con plan seleccionado o trial configurado y listo para trabajar.</p>
+                    <div style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#ef4444;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:7px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;flex-shrink:0;"></span>Obligatorio</div>
                 </div>
-                <div class="fade-in" style="background:#fff;border-radius:16px;padding:28px 32px;border:1px solid #e2e8f0;display:flex;gap:20px;align-items:flex-start;">
-                    <span style="font-size:32px;flex-shrink:0">💳</span>
-                    <div>
-                        <h4 style="font-size:17px;font-weight:800;color:#0f172a;margin:0 0 8px;">Info de Negocio</h4>
-                        <p style="font-size:14px;color:#64748b;margin:0;line-height:1.7;">Datos de la empresa, configuración de impuestos, zonas de envío y tarifas, métodos de pago preferidos, moneda principal.</p>
-                    </div>
+                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:32px;position:relative;overflow:hidden;cursor:default;transition:border-color 0.25s,background 0.25s;" onmouseover="this.style.borderColor='rgba(236,72,153,0.4)';this.style.background='rgba(236,72,153,0.04)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.background='rgba(255,255,255,0.03)'">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#ec4899,transparent);"></div>
+                    <div style="width:52px;height:52px;border-radius:16px;background:rgba(236,72,153,0.1);border:1px solid rgba(236,72,153,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:24px;">💳</div>
+                    <h4 style="font-size:17px;font-weight:800;color:#fff;margin:0 0 10px;letter-spacing:-0.3px;">Info de Negocio</h4>
+                    <p style="font-size:13.5px;color:rgba(255,255,255,0.4);margin:0 0 20px;line-height:1.75;">Datos empresa, impuestos, zonas de envío y tarifas, métodos de pago preferidos y moneda principal del negocio.</p>
+                    <div style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#ef4444;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:7px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;flex-shrink:0;"></span>Obligatorio</div>
                 </div>
+            </div>
+
+            <!-- Warning bar -->
+            <div style="margin-top:40px;background:rgba(239,68,68,0.05);border:1px solid rgba(239,68,68,0.14);border-radius:18px;padding:24px 32px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+                <div style="width:46px;height:46px;border-radius:14px;background:rgba(239,68,68,0.1);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">⚠️</div>
+                <div style="flex:1;">
+                    <div style="font-size:15px;font-weight:700;color:#fff;margin-bottom:4px;">Sin checklist completo, el proyecto no inicia</div>
+                    <div style="font-size:13px;color:rgba(255,255,255,0.38);">Todos los assets deben estar listos antes del Día 1. Esto garantiza cumplir el timeline prometido sin retrasos ni sorpresas de último minuto.</div>
+                </div>
+                <a href="#contacto" style="background:#ef4444;color:#fff;padding:12px 26px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap;flex-shrink:0;">Empezar ahora →</a>
             </div>
         </div>
     </section>
 
     <!-- PROCESO OPERATIVO -->
-    <section id="proceso-operativo" style="padding:120px 60px; background:#f8f8f8;">
-        <div class="container">
-            <div style="margin-bottom:64px;">
-                <div style="font-size:12px;font-weight:700;letter-spacing:3px;color:#ef4444;text-transform:uppercase;margin-bottom:16px">Flujo de Trabajo</div>
-                <h2 style="font-size:clamp(32px,4vw,52px);font-weight:900;color:#0f172a;letter-spacing:-1.5px;line-height:1.1;margin:0">Proceso Operativo</h2>
+    <section id="proceso-operativo" style="padding:140px 0; background:#030712; position:relative; overflow:hidden;">
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:1400px;height:700px;background:radial-gradient(ellipse, rgba(59,130,246,0.05) 0%, transparent 70%);pointer-events:none;"></div>
+        <div class="container" style="position:relative;z-index:1;padding:0 60px;">
+            <!-- Header -->
+            <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:64px;flex-wrap:wrap;gap:28px;">
+                <div>
+                    <div style="font-size:11px;font-weight:700;letter-spacing:4px;color:#3b82f6;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:12px;"><span style="width:32px;height:1px;background:#3b82f6;display:inline-block;"></span>Flujo de Trabajo</div>
+                    <h2 style="font-size:clamp(36px,4.5vw,58px);font-weight:900;color:#fff;letter-spacing:-2px;line-height:1.05;margin:0 0 16px;">De Cero a<br><span style="color:#3b82f6;">Tienda en Vivo</span></h2>
+                    <p style="font-size:16px;color:rgba(255,255,255,0.4);max-width:420px;line-height:1.7;margin:0;">9 pasos. 7–15 días. Sin sorpresas. Así ejecutamos cada proyecto de principio a fin.</p>
+                </div>
+                <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center;">
+                    <div style="display:flex;align-items:center;gap:8px;"><span style="width:8px;height:8px;border-radius:2px;background:#ef4444;display:inline-block;"></span><span style="font-size:12px;color:rgba(255,255,255,0.4);">Cliente</span></div>
+                    <div style="display:flex;align-items:center;gap:8px;"><span style="width:8px;height:8px;border-radius:2px;background:#3b82f6;display:inline-block;"></span><span style="font-size:12px;color:rgba(255,255,255,0.4);">Equipo AS</span></div>
+                    <div style="display:flex;align-items:center;gap:8px;"><span style="width:8px;height:8px;border-radius:2px;background:#10b981;display:inline-block;"></span><span style="font-size:12px;color:rgba(255,255,255,0.4);">Claude Code</span></div>
+                    <div style="display:flex;align-items:center;gap:8px;"><span style="width:8px;height:8px;border-radius:2px;background:#f59e0b;display:inline-block;"></span><span style="font-size:12px;color:rgba(255,255,255,0.4);">Revisión</span></div>
+                </div>
             </div>
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1100px;">
-                <!-- Row 1 -->
-                <div class="fade-in" style="background:#fff;border-radius:14px;padding:22px 24px;border:1px solid #e2e8f0;border-left:4px solid #ef4444;display:flex;align-items:flex-start;gap:16px;">
-                    <div style="width:36px;height:36px;border-radius:10px;background:#ef4444;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#fff;flex-shrink:0;">1</div>
-                    <div><div style="font-size:15px;font-weight:800;color:#0f172a;margin-bottom:4px;">Brief del cliente</div><div style="font-size:13px;color:#64748b;">Assets, referentes, productos, estilo</div></div>
-                </div>
-                <div style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:24px;">→</div>
-                <div class="fade-in" style="background:#fff;border-radius:14px;padding:22px 24px;border:1px solid #e2e8f0;border-left:4px solid #3b82f6;display:flex;align-items:flex-start;gap:16px;">
-                    <div style="width:36px;height:36px;border-radius:10px;background:#3b82f6;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#fff;flex-shrink:0;">2</div>
-                    <div><div style="font-size:15px;font-weight:800;color:#0f172a;margin-bottom:4px;">Setup del proyecto</div><div style="font-size:13px;color:#64748b;">Tienda dev + tema + Git + CLAUDE.md</div></div>
-                </div>
-                <!-- Row 2 arrow -->
-                <div class="fade-in" style="background:#fff;border-radius:14px;padding:22px 24px;border:1px solid #e2e8f0;border-left:4px solid #10b981;display:flex;align-items:flex-start;gap:16px;">
-                    <div style="width:36px;height:36px;border-radius:10px;background:#10b981;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#fff;flex-shrink:0;">3</div>
-                    <div><div style="font-size:15px;font-weight:800;color:#0f172a;margin-bottom:4px;">Personalización con Claude Code</div><div style="font-size:13px;color:#64748b;">Secciones, estilos, traducciones</div></div>
-                </div>
-                <div style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:24px;">→</div>
-                <div class="fade-in" style="background:#fff;border-radius:14px;padding:22px 24px;border:1px solid #e2e8f0;border-left:4px solid #10b981;display:flex;align-items:flex-start;gap:16px;">
-                    <div style="width:36px;height:36px;border-radius:10px;background:#10b981;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#fff;flex-shrink:0;">4</div>
-                    <div><div style="font-size:15px;font-weight:800;color:#0f172a;margin-bottom:4px;">Carga de productos</div><div style="font-size:13px;color:#64748b;">CSV masivo o GraphQL vía CLI</div></div>
-                </div>
-                <!-- Row 3 -->
-                <div class="fade-in" style="background:#fff;border-radius:14px;padding:22px 24px;border:1px solid #e2e8f0;border-left:4px solid #f59e0b;display:flex;align-items:flex-start;gap:16px;">
-                    <div style="width:36px;height:36px;border-radius:10px;background:#f59e0b;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#fff;flex-shrink:0;">5</div>
-                    <div><div style="font-size:15px;font-weight:800;color:#0f172a;margin-bottom:4px;">Preview al cliente</div><div style="font-size:13px;color:#64748b;">Entrega de Ronda 1 para feedback</div></div>
-                </div>
-                <div style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:24px;">→</div>
-                <div class="fade-in" style="background:#fff;border-radius:14px;padding:22px 24px;border:1px solid #e2e8f0;border-left:4px solid #3b82f6;display:flex;align-items:flex-start;gap:16px;">
-                    <div style="width:36px;height:36px;border-radius:10px;background:#3b82f6;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#fff;flex-shrink:0;">6</div>
-                    <div><div style="font-size:15px;font-weight:800;color:#0f172a;margin-bottom:4px;">Correcciones R2</div><div style="font-size:13px;color:#64748b;">Ajustes según feedback consolidado</div></div>
-                </div>
-                <!-- Row 4 -->
-                <div class="fade-in" style="background:#fff;border-radius:14px;padding:22px 24px;border:1px solid #e2e8f0;border-left:4px solid #f59e0b;display:flex;align-items:flex-start;gap:16px;">
-                    <div style="width:36px;height:36px;border-radius:10px;background:#f59e0b;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#fff;flex-shrink:0;">7</div>
-                    <div><div style="font-size:15px;font-weight:800;color:#0f172a;margin-bottom:4px;">Ajustes finales R3</div><div style="font-size:13px;color:#64748b;">Detalles menores, typos, links</div></div>
-                </div>
-                <div style="display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:24px;">→</div>
-                <div class="fade-in" style="background:#fff;border-radius:14px;padding:22px 24px;border:1px solid #e2e8f0;border-left:4px solid #3b82f6;display:flex;align-items:flex-start;gap:16px;">
-                    <div style="width:36px;height:36px;border-radius:10px;background:#3b82f6;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#fff;flex-shrink:0;">8</div>
-                    <div><div style="font-size:15px;font-weight:800;color:#0f172a;margin-bottom:4px;">QA y validación</div><div style="font-size:13px;color:#64748b;">Testing, Lighthouse, responsive</div></div>
-                </div>
-                <!-- Row 5 — full width launch -->
-                <div class="fade-in" style="grid-column:1/-1;background:linear-gradient(135deg,#0f172a,#1e3a5f);border-radius:14px;padding:24px 32px;display:flex;align-items:center;gap:20px;justify-content:center;">
-                    <div style="width:40px;height:40px;border-radius:10px;background:#ef4444;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:900;color:#fff;flex-shrink:0;">9</div>
-                    <div>
-                        <div style="font-size:18px;font-weight:800;color:#fff;margin-bottom:4px;">🚀 Lanzamiento</div>
-                        <div style="font-size:14px;color:rgba(255,255,255,0.6);">Publicar + dominio + pagos — tu tienda en vivo</div>
+
+            <!-- Step tab buttons -->
+            <div id="procesoTabs" style="display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap;">
+                <button onclick="showProcesoStep(0)" class="ptab ptab-active" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(59,130,246,0.6);background:rgba(59,130,246,0.15);color:#3b82f6;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">01</button>
+                <button onclick="showProcesoStep(1)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">02</button>
+                <button onclick="showProcesoStep(2)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">03</button>
+                <button onclick="showProcesoStep(3)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">04</button>
+                <button onclick="showProcesoStep(4)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">05</button>
+                <button onclick="showProcesoStep(5)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">06</button>
+                <button onclick="showProcesoStep(6)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">07</button>
+                <button onclick="showProcesoStep(7)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">08</button>
+                <button onclick="showProcesoStep(8)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">09</button>
+            </div>
+
+            <!-- Step panels -->
+            <div id="procesoPanel0" class="ppanel" style="display:block;">
+                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(239,68,68,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#ef4444,transparent);"></div>
+                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(239,68,68,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;font-variant-numeric:tabular-nums;user-select:none;">01</div>
+                    <div style="flex:1;padding-top:8px;">
+                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#ef4444;text-transform:uppercase;">Cliente</span></div>
+                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Brief del Cliente</h3>
+                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Tu punto de partida. Compartes todos los assets, referencias de diseño, catálogo de productos y la identidad de tu marca. Sin esto, no arrancamos.</p>
+                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📎 Assets visuales</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🎯 Referencias de estilo</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📦 Catálogo completo</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Legend -->
-            <div style="display:flex;gap:24px;margin-top:28px;flex-wrap:wrap;">
-                <span style="font-size:13px;color:#64748b;display:flex;align-items:center;gap:8px;"><span style="width:12px;height:12px;border-radius:3px;background:#ef4444;display:inline-block"></span>Cliente</span>
-                <span style="font-size:13px;color:#64748b;display:flex;align-items:center;gap:8px;"><span style="width:12px;height:12px;border-radius:3px;background:#3b82f6;display:inline-block"></span>Equipo</span>
-                <span style="font-size:13px;color:#64748b;display:flex;align-items:center;gap:8px;"><span style="width:12px;height:12px;border-radius:3px;background:#10b981;display:inline-block"></span>Claude Code</span>
-                <span style="font-size:13px;color:#64748b;display:flex;align-items:center;gap:8px;"><span style="width:12px;height:12px;border-radius:3px;background:#f59e0b;display:inline-block"></span>Revisión</span>
+            <div id="procesoPanel1" class="ppanel" style="display:none;">
+                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(59,130,246,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#3b82f6,transparent);"></div>
+                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(59,130,246,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">02</div>
+                    <div style="flex:1;padding-top:8px;">
+                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#3b82f6;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#3b82f6;text-transform:uppercase;">Equipo AS</span></div>
+                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Setup del Proyecto</h3>
+                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Creamos el entorno completo de desarrollo: tienda Shopify de prueba, tema base seleccionado, repositorio Git y documentación interna del proyecto.</p>
+                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🏪 Tienda dev</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🎨 Tema base</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📂 Git + CLAUDE.md</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="procesoPanel2" class="ppanel" style="display:none;">
+                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(16,185,129,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#10b981,transparent);"></div>
+                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(16,185,129,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">03</div>
+                    <div style="flex:1;padding-top:8px;">
+                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#10b981;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#10b981;text-transform:uppercase;">Claude Code</span></div>
+                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Personalización del Tema</h3>
+                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Claude Code personaliza el tema en base al brief: secciones custom, paleta de colores, tipografía, traducciones y experiencia optimizada para mobile.</p>
+                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">✨ Secciones custom</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🌍 Traducciones ES</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📱 Mobile-first</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="procesoPanel3" class="ppanel" style="display:none;">
+                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(16,185,129,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#10b981,transparent);"></div>
+                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(16,185,129,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">04</div>
+                    <div style="flex:1;padding-top:8px;">
+                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#10b981;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#10b981;text-transform:uppercase;">Claude Code</span></div>
+                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Carga de Productos</h3>
+                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Importamos todo el catálogo de forma masiva vía CSV o GraphQL API. Variantes, imágenes optimizadas, metafields, colecciones y precios al 100%.</p>
+                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📊 CSV masivo</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">⚡ GraphQL CLI</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🖼️ Imágenes optimizadas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="procesoPanel4" class="ppanel" style="display:none;">
+                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(245,158,11,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#f59e0b,transparent);"></div>
+                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(245,158,11,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">05</div>
+                    <div style="flex:1;padding-top:8px;">
+                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#f59e0b;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#f59e0b;text-transform:uppercase;">Revisión conjunta</span></div>
+                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Preview al Cliente</h3>
+                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Entregamos el primer preview de la tienda. Tienes 24–48h para revisar y consolidar todos los ajustes en un único documento. Sin correcciones sueltas.</p>
+                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">👁️ Preview en vivo</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">⏰ 24–48h feedback</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📋 Un doc consolidado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="procesoPanel5" class="ppanel" style="display:none;">
+                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(59,130,246,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#3b82f6,transparent);"></div>
+                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(59,130,246,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">06</div>
+                    <div style="flex:1;padding-top:8px;">
+                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#3b82f6;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#3b82f6;text-transform:uppercase;">Equipo AS</span></div>
+                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Correcciones Ronda 2</h3>
+                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Aplicamos todos los ajustes del feedback consolidado: colores, textos, layout, imágenes, productos. Sin idas y vueltas — todo de una sola vez.</p>
+                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🎨 Colores y espaciados</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📝 Textos e imágenes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="procesoPanel6" class="ppanel" style="display:none;">
+                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(245,158,11,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#f59e0b,transparent);"></div>
+                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(245,158,11,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">07</div>
+                    <div style="flex:1;padding-top:8px;">
+                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#f59e0b;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#f59e0b;text-transform:uppercase;">Revisión conjunta</span></div>
+                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Ajustes Finales R3</h3>
+                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Última ronda de micro-ajustes: typos, links rotos, imágenes de detalle. Cambios estructurales en esta etapa generan un nuevo presupuesto.</p>
+                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🔤 Typos y links</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🔍 Detalles menores</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="procesoPanel7" class="ppanel" style="display:none;">
+                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(59,130,246,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#3b82f6,transparent);"></div>
+                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(59,130,246,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">08</div>
+                    <div style="flex:1;padding-top:8px;">
+                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#3b82f6;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#3b82f6;text-transform:uppercase;">Equipo AS</span></div>
+                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">QA y Validación</h3>
+                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Pruebas integrales en desktop, tablet y mobile. Lighthouse para performance y SEO técnico. Checkout flow completo. Cero bugs antes de publicar.</p>
+                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">⚡ Lighthouse</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📱 Responsive testing</span>
+                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🛒 Checkout flow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="procesoPanel8" class="ppanel" style="display:none;">
+                <div style="background:linear-gradient(135deg,rgba(59,130,246,0.1) 0%,rgba(124,58,237,0.1) 100%);border:1px solid rgba(255,255,255,0.12);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#3b82f6,#7c3aed,#ef4444);"></div>
+                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(255,255,255,0.07);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">09</div>
+                    <div style="flex:1;padding-top:8px;">
+                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="font-size:14px;">🚀</span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#fff;text-transform:uppercase;">Todos</span></div>
+                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Lanzamiento</h3>
+                        <p style="font-size:16px;color:rgba(255,255,255,0.6);line-height:1.75;margin:0 0 28px;max-width:520px;">Publicamos la tienda en producción: conexión del dominio, activación de pasarelas de pago, configuración final de envíos. Tu marca, en vivo, vendiendo.</p>
+                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                            <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.65);">🌐 Dominio conectado</span>
+                            <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.65);">💳 Pagos activados</span>
+                            <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.65);">📦 Envíos listos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress bar -->
+            <div style="margin-top:24px;display:flex;align-items:center;gap:16px;">
+                <span id="procesoCounter" style="font-size:13px;color:rgba(255,255,255,0.3);font-weight:600;flex-shrink:0;">1 / 9</span>
+                <div style="flex:1;height:2px;background:rgba(255,255,255,0.06);border-radius:2px;overflow:hidden;">
+                    <div id="procesoBar" style="height:100%;width:11.1%;background:linear-gradient(90deg,#3b82f6,#7c3aed);border-radius:2px;transition:width 0.3s ease;"></div>
+                </div>
+                <div style="display:flex;gap:8px;">
+                    <button onclick="procesoNav(-1)" style="width:36px;height:36px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.5);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:inherit;transition:all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background='rgba(255,255,255,0.04)'">←</button>
+                    <button onclick="procesoNav(1)" style="width:36px;height:36px;border-radius:8px;border:1px solid rgba(59,130,246,0.4);background:rgba(59,130,246,0.1);color:#3b82f6;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:inherit;transition:all 0.2s;" onmouseover="this.style.background='rgba(59,130,246,0.2)'" onmouseout="this.style.background='rgba(59,130,246,0.1)'">→</button>
+                </div>
             </div>
         </div>
     </section>
@@ -1926,62 +2072,109 @@
     </section>
 
     <!-- SISTEMA DE CORRECCIONES -->
-    <section id="correcciones" style="padding:120px 60px; background:#fff;">
-        <div class="container">
-            <div style="margin-bottom:64px;">
-                <div style="font-size:12px;font-weight:700;letter-spacing:3px;color:#ef4444;text-transform:uppercase;margin-bottom:16px">Gestión de Cambios</div>
-                <h2 style="font-size:clamp(32px,4vw,52px);font-weight:900;color:#0f172a;letter-spacing:-1.5px;line-height:1.1;margin:0 0 16px">Sistema de Correcciones</h2>
-                <p style="font-size:17px;color:#64748b;max-width:620px;line-height:1.7;margin:0;">Proceso estructurado que protege el timeline sin sacrificar la satisfacción del cliente.</p>
+    <section id="correcciones" style="padding:140px 60px; background:#0a0a18; position:relative; overflow:hidden;">
+        <div style="position:absolute;top:50%;left:0;right:0;height:700px;transform:translateY(-50%);background:radial-gradient(ellipse 900px 400px at 50% 50%, rgba(124,58,237,0.06) 0%, transparent 70%);pointer-events:none;"></div>
+        <div class="container" style="position:relative;z-index:1;">
+            <!-- Header -->
+            <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:72px;flex-wrap:wrap;gap:28px;">
+                <div>
+                    <div style="font-size:11px;font-weight:700;letter-spacing:4px;color:#7c3aed;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:12px;"><span style="width:32px;height:1px;background:#7c3aed;display:inline-block;"></span>Gestión de Cambios</div>
+                    <h2 style="font-size:clamp(36px,4.5vw,58px);font-weight:900;color:#fff;letter-spacing:-2px;line-height:1.05;margin:0 0 16px;">Sistema de<br><span style="color:#7c3aed;">Correcciones</span></h2>
+                    <p style="font-size:16px;color:rgba(255,255,255,0.4);max-width:480px;line-height:1.75;margin:0;">Proceso estructurado que protege el timeline sin sacrificar la satisfacción del cliente. Sin idas y vueltas infinitas.</p>
+                </div>
+                <div style="background:rgba(124,58,237,0.08);border:1px solid rgba(124,58,237,0.18);border-radius:18px;padding:24px 36px;text-align:center;flex-shrink:0;">
+                    <div style="font-size:44px;font-weight:900;color:#fff;letter-spacing:-2px;line-height:1;margin-bottom:6px;">4</div>
+                    <div style="font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:2px;text-transform:uppercase;">rondas máximo</div>
+                </div>
             </div>
-            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1100px;">
-                <!-- Ronda 0 -->
-                <div class="fade-in" style="background:#fef2f2;border-radius:16px;padding:28px;border-top:4px solid #ef4444;">
-                    <div style="font-size:11px;font-weight:700;letter-spacing:2px;color:#ef4444;text-transform:uppercase;margin-bottom:8px;">RONDA 0</div>
-                    <h4 style="font-size:20px;font-weight:800;color:#0f172a;margin:0 0 4px;">Pre-requisitos</h4>
-                    <div style="font-size:13px;color:#ef4444;font-style:italic;margin-bottom:20px;">Antes de iniciar</div>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#ef4444;margin-top:2px;flex-shrink:0">●</span>Cliente entrega todos los assets completos</li>
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#ef4444;margin-top:2px;flex-shrink:0">●</span>Logo, fotos de productos, textos</li>
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#ef4444;margin-top:2px;flex-shrink:0">●</span>Lista completa de productos y precios</li>
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#ef4444;margin-top:2px;flex-shrink:0">●</span>Sin assets = sin inicio del proyecto</li>
+
+            <!-- Timeline -->
+            <div style="position:relative;margin-bottom:52px;padding:0 24px;">
+                <div style="position:absolute;top:23px;left:calc(24px + 24px);right:calc(24px + 24px);height:1px;background:rgba(255,255,255,0.07);"></div>
+                <div style="display:flex;justify-content:space-between;position:relative;z-index:1;">
+                    <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+                        <div style="width:46px;height:46px;border-radius:50%;background:#ef4444;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;box-shadow:0 0 24px rgba(239,68,68,0.35);border:2px solid rgba(239,68,68,0.4);">R0</div>
+                        <div style="font-size:11px;color:rgba(255,255,255,0.35);text-align:center;white-space:nowrap;letter-spacing:0.5px;">Inicio</div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+                        <div style="width:46px;height:46px;border-radius:50%;background:#f59e0b;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;box-shadow:0 0 24px rgba(245,158,11,0.35);border:2px solid rgba(245,158,11,0.4);">R1</div>
+                        <div style="font-size:11px;color:rgba(255,255,255,0.35);text-align:center;white-space:nowrap;letter-spacing:0.5px;">Día 3</div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+                        <div style="width:46px;height:46px;border-radius:50%;background:#10b981;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;box-shadow:0 0 24px rgba(16,185,129,0.35);border:2px solid rgba(16,185,129,0.4);">R2</div>
+                        <div style="font-size:11px;color:rgba(255,255,255,0.35);text-align:center;white-space:nowrap;letter-spacing:0.5px;">Día 4</div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+                        <div style="width:46px;height:46px;border-radius:50%;background:#7c3aed;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;box-shadow:0 0 24px rgba(124,58,237,0.35);border:2px solid rgba(124,58,237,0.4);">R3</div>
+                        <div style="font-size:11px;color:rgba(255,255,255,0.35);text-align:center;white-space:nowrap;letter-spacing:0.5px;">Día 5</div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+                        <div style="width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#7c3aed);display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 0 28px rgba(99,102,241,0.4);border:2px solid rgba(255,255,255,0.15);">🚀</div>
+                        <div style="font-size:11px;color:rgba(255,255,255,0.35);text-align:center;white-space:nowrap;letter-spacing:0.5px;">Lanzamiento</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 cards -->
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(239,68,68,0.15);border-radius:20px;padding:32px;position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ef4444,rgba(239,68,68,0.15));"></div>
+                    <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.2);border-radius:6px;padding:4px 11px;margin-bottom:20px;"><span style="font-size:10px;font-weight:700;letter-spacing:2px;color:#ef4444;text-transform:uppercase;">Ronda 0</span></div>
+                    <h4 style="font-size:19px;font-weight:800;color:#fff;margin:0 0 4px;">Pre-requisitos</h4>
+                    <div style="font-size:12px;color:rgba(239,68,68,0.6);margin-bottom:24px;font-style:italic;">Antes de iniciar</div>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;">
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#ef4444;display:inline-block;margin-top:7px;"></span>Todos los assets entregados</li>
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#ef4444;display:inline-block;margin-top:7px;"></span>Logo, fotos, textos completos</li>
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#ef4444;display:inline-block;margin-top:7px;"></span>Catálogo completo con precios</li>
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#ef4444;display:inline-block;margin-top:7px;"></span>Sin assets = sin inicio</li>
                     </ul>
                 </div>
-                <!-- Ronda 1 -->
-                <div class="fade-in" style="background:#fffbeb;border-radius:16px;padding:28px;border-top:4px solid #f59e0b;">
-                    <div style="font-size:11px;font-weight:700;letter-spacing:2px;color:#f59e0b;text-transform:uppercase;margin-bottom:8px;">RONDA 1</div>
-                    <h4 style="font-size:20px;font-weight:800;color:#0f172a;margin:0 0 4px;">Preview inicial</h4>
-                    <div style="font-size:13px;color:#f59e0b;font-style:italic;margin-bottom:20px;">Día 3</div>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#f59e0b;margin-top:2px;flex-shrink:0">●</span>Se entrega preview de la tienda</li>
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#f59e0b;margin-top:2px;flex-shrink:0">●</span>Cliente tiene 24–48h para feedback</li>
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#f59e0b;margin-top:2px;flex-shrink:0">●</span>Feedback consolidado en UN documento</li>
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#f59e0b;margin-top:2px;flex-shrink:0">●</span>No se aceptan correcciones sueltas</li>
+                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(245,158,11,0.15);border-radius:20px;padding:32px;position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#f59e0b,rgba(245,158,11,0.15));"></div>
+                    <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.2);border-radius:6px;padding:4px 11px;margin-bottom:20px;"><span style="font-size:10px;font-weight:700;letter-spacing:2px;color:#f59e0b;text-transform:uppercase;">Ronda 1</span></div>
+                    <h4 style="font-size:19px;font-weight:800;color:#fff;margin:0 0 4px;">Preview Inicial</h4>
+                    <div style="font-size:12px;color:rgba(245,158,11,0.6);margin-bottom:24px;font-style:italic;">Día 3</div>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;">
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#f59e0b;display:inline-block;margin-top:7px;"></span>Preview completo de la tienda</li>
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#f59e0b;display:inline-block;margin-top:7px;"></span>24–48h para revisar</li>
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#f59e0b;display:inline-block;margin-top:7px;"></span>Feedback en un único doc</li>
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#f59e0b;display:inline-block;margin-top:7px;"></span>No se aceptan mensajes sueltos</li>
                     </ul>
                 </div>
-                <!-- Ronda 2 -->
-                <div class="fade-in" style="background:#f0fdf4;border-radius:16px;padding:28px;border-top:4px solid #10b981;">
-                    <div style="font-size:11px;font-weight:700;letter-spacing:2px;color:#10b981;text-transform:uppercase;margin-bottom:8px;">RONDA 2</div>
-                    <h4 style="font-size:20px;font-weight:800;color:#0f172a;margin:0 0 4px;">Correcciones</h4>
-                    <div style="font-size:13px;color:#10b981;font-style:italic;margin-bottom:20px;">Día 4</div>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#10b981;margin-top:2px;flex-shrink:0">●</span>Ajustes de colores y espaciados</li>
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#10b981;margin-top:2px;flex-shrink:0">●</span>Reordenar secciones</li>
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#10b981;margin-top:2px;flex-shrink:0">●</span>Cambiar textos e imágenes</li>
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#10b981;margin-top:2px;flex-shrink:0">●</span>Corrección de productos</li>
+                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(16,185,129,0.15);border-radius:20px;padding:32px;position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#10b981,rgba(16,185,129,0.15));"></div>
+                    <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);border-radius:6px;padding:4px 11px;margin-bottom:20px;"><span style="font-size:10px;font-weight:700;letter-spacing:2px;color:#10b981;text-transform:uppercase;">Ronda 2</span></div>
+                    <h4 style="font-size:19px;font-weight:800;color:#fff;margin:0 0 4px;">Correcciones</h4>
+                    <div style="font-size:12px;color:rgba(16,185,129,0.6);margin-bottom:24px;font-style:italic;">Día 4</div>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;">
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#10b981;display:inline-block;margin-top:7px;"></span>Colores y espaciados</li>
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#10b981;display:inline-block;margin-top:7px;"></span>Reordenar secciones</li>
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#10b981;display:inline-block;margin-top:7px;"></span>Textos e imágenes</li>
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#10b981;display:inline-block;margin-top:7px;"></span>Corrección de productos</li>
                     </ul>
                 </div>
-                <!-- Ronda 3 -->
-                <div class="fade-in" style="background:#f5f3ff;border-radius:16px;padding:28px;border-top:4px solid #7c3aed;">
-                    <div style="font-size:11px;font-weight:700;letter-spacing:2px;color:#7c3aed;text-transform:uppercase;margin-bottom:8px;">RONDA 3</div>
-                    <h4 style="font-size:20px;font-weight:800;color:#0f172a;margin:0 0 4px;">Ajustes finales</h4>
-                    <div style="font-size:13px;color:#7c3aed;font-style:italic;margin-bottom:20px;">Día 5</div>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#7c3aed;margin-top:2px;flex-shrink:0">●</span>Solo detalles menores</li>
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#7c3aed;margin-top:2px;flex-shrink:0">●</span>Typos y links rotos</li>
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#7c3aed;margin-top:2px;flex-shrink:0">●</span>Cambios de imagen puntuales</li>
-                        <li style="font-size:13px;color:#475569;display:flex;gap:8px;align-items:flex-start;"><span style="color:#7c3aed;margin-top:2px;flex-shrink:0">●</span>Cambios estructurales = nuevo presupuesto</li>
+                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(124,58,237,0.15);border-radius:20px;padding:32px;position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#7c3aed,rgba(124,58,237,0.15));"></div>
+                    <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2);border-radius:6px;padding:4px 11px;margin-bottom:20px;"><span style="font-size:10px;font-weight:700;letter-spacing:2px;color:#7c3aed;text-transform:uppercase;">Ronda 3</span></div>
+                    <h4 style="font-size:19px;font-weight:800;color:#fff;margin:0 0 4px;">Ajustes Finales</h4>
+                    <div style="font-size:12px;color:rgba(124,58,237,0.6);margin-bottom:24px;font-style:italic;">Día 5</div>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;">
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#7c3aed;display:inline-block;margin-top:7px;"></span>Solo detalles menores</li>
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#7c3aed;display:inline-block;margin-top:7px;"></span>Typos y links rotos</li>
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#7c3aed;display:inline-block;margin-top:7px;"></span>Cambios de imagen puntuales</li>
+                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#7c3aed;display:inline-block;margin-top:7px;"></span>Estructurales = nuevo presupuesto</li>
                     </ul>
                 </div>
+            </div>
+
+            <!-- Bottom note -->
+            <div style="margin-top:40px;background:rgba(124,58,237,0.05);border:1px solid rgba(124,58,237,0.14);border-radius:16px;padding:24px 32px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
+                <div style="font-size:24px;flex-shrink:0;">💡</div>
+                <div style="flex:1;">
+                    <div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:4px;">Proceso diseñado para tu tranquilidad</div>
+                    <div style="font-size:13px;color:rgba(255,255,255,0.37);">Cada ronda tiene alcance definido. Nada queda abierto a interpretación. Menos estrés, más resultados, en menos tiempo.</div>
+                </div>
+                <a href="#contacto" style="background:rgba(124,58,237,0.2);border:1px solid rgba(124,58,237,0.35);color:#a78bfa;padding:12px 24px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap;flex-shrink:0;">Ver paquetes →</a>
             </div>
         </div>
     </section>
@@ -2480,6 +2673,52 @@
             });
         }, { threshold: 0.5 });
         document.querySelectorAll('.count-up').forEach(el => counterObserver.observe(el));
+
+        // ─── PROCESO OPERATIVO TABS ────────────────────────────────────────────
+        const procesoStepColors = ['#3b82f6','#3b82f6','#10b981','#10b981','#f59e0b','#3b82f6','#f59e0b','#3b82f6','#7c3aed'];
+        let procesoCurrentStep = 0;
+
+        function showProcesoStep(n) {
+            document.querySelectorAll('.ppanel').forEach((p, i) => {
+                p.style.display = i === n ? 'block' : 'none';
+            });
+            const tabs = document.querySelectorAll('.ptab');
+            tabs.forEach((t, i) => {
+                const col = procesoStepColors[i];
+                if (i === n) {
+                    t.style.background = col.replace(')', ',0.15)').replace('rgb', 'rgba');
+                    t.style.borderColor = col.replace(')', ',0.6)').replace('rgb', 'rgba');
+                    t.style.color = col;
+                } else {
+                    t.style.background = 'rgba(255,255,255,0.04)';
+                    t.style.borderColor = 'rgba(255,255,255,0.08)';
+                    t.style.color = 'rgba(255,255,255,0.4)';
+                }
+            });
+            procesoCurrentStep = n;
+            const counter = document.getElementById('procesoCounter');
+            const bar = document.getElementById('procesoBar');
+            if (counter) counter.textContent = (n + 1) + ' / 9';
+            if (bar) bar.style.width = ((n + 1) / 9 * 100).toFixed(1) + '%';
+        }
+
+        function procesoNav(dir) {
+            const next = Math.max(0, Math.min(8, procesoCurrentStep + dir));
+            showProcesoStep(next);
+        }
+
+        // Tab color fix — apply hex colors properly on init
+        (function initProcesoTabs() {
+            const tabs = document.querySelectorAll('.ptab');
+            if (!tabs.length) return;
+            tabs.forEach((t, i) => {
+                if (i === 0) {
+                    t.style.background = 'rgba(59,130,246,0.15)';
+                    t.style.borderColor = 'rgba(59,130,246,0.6)';
+                    t.style.color = '#3b82f6';
+                }
+            });
+        })();
 
         // ─── SWIPER ────────────────────────────────────────────────────────────
         const swiper = new Swiper('.swiper', {
