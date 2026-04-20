@@ -1194,12 +1194,183 @@
 
                 <!-- RIGHT: sticky visual panel -->
                 <div class="services-right">
-                    <div class="service-visual active" data-visual="0" style="background-image: url('service-ecommerce-banner.png');"></div>
-                    <div class="service-visual" data-visual="1" style="background-image: url('service-design-banner.png');"></div>
-                    <div class="service-visual" data-visual="2" style="background-image: url('service-payments-banner.png');"></div>
-                    <div class="service-visual" data-visual="3" style="background-image: url('service-optimization-banner.png');"></div>
-                    <div class="service-visual" data-visual="4" style="background-image: url('service-marketing-banner.png');"></div>
-                    <div class="service-visual" data-visual="5" style="background-image: url('service-support-banner.png');"></div>
+
+                    <!-- 0: E-COMMERCE -->
+                    <div class="service-visual active" data-visual="0" style="background:#0a0e1a;">
+                        <div style="width:100%;height:100%;padding:32px;display:flex;flex-direction:column;justify-content:space-between;font-family:'Inter',sans-serif;">
+                            <div>
+                                <div style="font-size:11px;font-weight:700;letter-spacing:3px;color:#3b82f6;text-transform:uppercase;margin-bottom:16px">E-Commerce</div>
+                                <div style="font-size:32px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:12px">Tu tienda,<br>lista en<br>6 semanas.</div>
+                                <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6">Pasarelas de pago, inventario y logística integrados desde el día uno.</div>
+                            </div>
+                            <!-- Mini store preview -->
+                            <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:16px;">
+                                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+                                    <span style="font-size:10px;font-weight:700;color:#fff;opacity:0.7">MI TIENDA</span>
+                                    <span style="font-size:10px;color:#3b82f6">🛒 3 items</span>
+                                </div>
+                                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+                                    <div style="background:rgba(59,130,246,0.15);border-radius:6px;padding:10px;text-align:center">
+                                        <div style="font-size:18px;margin-bottom:4px">👗</div>
+                                        <div style="font-size:8px;color:#fff;opacity:0.7">$89.000</div>
+                                    </div>
+                                    <div style="background:rgba(59,130,246,0.15);border-radius:6px;padding:10px;text-align:center">
+                                        <div style="font-size:18px;margin-bottom:4px">👟</div>
+                                        <div style="font-size:8px;color:#fff;opacity:0.7">$245.000</div>
+                                    </div>
+                                    <div style="background:rgba(59,130,246,0.25);border-radius:6px;padding:10px;text-align:center;border:1px solid #3b82f6">
+                                        <div style="font-size:18px;margin-bottom:4px">💄</div>
+                                        <div style="font-size:8px;color:#3b82f6;font-weight:700">NUEVO</div>
+                                    </div>
+                                </div>
+                                <div style="margin-top:10px;background:#3b82f6;border-radius:6px;padding:8px;text-align:center;font-size:10px;font-weight:700;color:#fff;">AGREGAR AL CARRITO</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1: DISEÑO WEB + UX -->
+                    <div class="service-visual" data-visual="1" style="background:#0d0d14;">
+                        <div style="width:100%;height:100%;padding:32px;display:flex;flex-direction:column;justify-content:space-between;font-family:'Inter',sans-serif;">
+                            <div>
+                                <div style="font-size:11px;font-weight:700;letter-spacing:3px;color:#a855f7;text-transform:uppercase;margin-bottom:16px">Diseño Web</div>
+                                <div style="font-size:32px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:12px">Interfaces<br>que venden<br>solas.</div>
+                                <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6">Cada elemento guía al cliente hacia el checkout. Mobile-first siempre.</div>
+                            </div>
+                            <!-- Browser mockup -->
+                            <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;overflow:hidden;">
+                                <div style="background:#1a1a2e;padding:8px 12px;display:flex;align-items:center;gap:5px;border-bottom:1px solid rgba(255,255,255,0.06)">
+                                    <div style="width:7px;height:7px;border-radius:50%;background:#ff5f57"></div>
+                                    <div style="width:7px;height:7px;border-radius:50%;background:#ffbd2e"></div>
+                                    <div style="width:7px;height:7px;border-radius:50%;background:#28c840"></div>
+                                    <div style="flex:1;background:rgba(255,255,255,0.06);border-radius:4px;height:14px;margin-left:6px;display:flex;align-items:center;padding:0 8px;">
+                                        <span style="font-size:7px;color:rgba(255,255,255,0.3)">🔒 mitienda.co</span>
+                                    </div>
+                                </div>
+                                <div style="padding:12px;">
+                                    <div style="height:8px;width:60%;background:rgba(168,85,247,0.4);border-radius:4px;margin-bottom:6px"></div>
+                                    <div style="height:6px;width:80%;background:rgba(255,255,255,0.08);border-radius:4px;margin-bottom:4px"></div>
+                                    <div style="height:6px;width:50%;background:rgba(255,255,255,0.05);border-radius:4px;margin-bottom:10px"></div>
+                                    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:5px">
+                                        <div style="height:36px;background:rgba(168,85,247,0.15);border-radius:5px"></div>
+                                        <div style="height:36px;background:rgba(168,85,247,0.1);border-radius:5px"></div>
+                                        <div style="height:36px;background:rgba(168,85,247,0.2);border-radius:5px;border:1px solid rgba(168,85,247,0.4)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2: DESARROLLO FULL STACK -->
+                    <div class="service-visual" data-visual="2" style="background:#061a12;">
+                        <div style="width:100%;height:100%;padding:32px;display:flex;flex-direction:column;justify-content:space-between;font-family:'Inter',sans-serif;">
+                            <div>
+                                <div style="font-size:11px;font-weight:700;letter-spacing:3px;color:#10b981;text-transform:uppercase;margin-bottom:16px">Full Stack</div>
+                                <div style="font-size:32px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:12px">Código que<br>escala con<br>tu negocio.</div>
+                                <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6">React, Node.js, Stripe, Shopify, MercadoPago. Todo conectado.</div>
+                            </div>
+                            <!-- Code block -->
+                            <div style="background:rgba(0,0,0,0.4);border:1px solid rgba(16,185,129,0.2);border-radius:12px;padding:16px;font-family:monospace;">
+                                <div style="font-size:9px;color:rgba(255,255,255,0.3);margin-bottom:8px">index.js — Integración Pagos</div>
+                                <div style="font-size:10px;line-height:1.8">
+                                    <span style="color:#10b981">const</span> <span style="color:#60a5fa">checkout</span> <span style="color:#fff">= await</span> <span style="color:#f59e0b">stripe</span><span style="color:#fff">.create({</span><br>
+                                    <span style="color:#fff;opacity:0.5">&nbsp;&nbsp;amount:</span> <span style="color:#a78bfa">89000</span><span style="color:#fff">,</span><br>
+                                    <span style="color:#fff;opacity:0.5">&nbsp;&nbsp;currency:</span> <span style="color:#86efac">'cop'</span><span style="color:#fff">,</span><br>
+                                    <span style="color:#fff;opacity:0.5">&nbsp;&nbsp;methods:</span> <span style="color:#86efac">['card','pse','nequi']</span><br>
+                                    <span style="color:#fff">});</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3: SEO & PERFORMANCE -->
+                    <div class="service-visual" data-visual="3" style="background:#0a0514;">
+                        <div style="width:100%;height:100%;padding:32px;display:flex;flex-direction:column;justify-content:space-between;font-family:'Inter',sans-serif;">
+                            <div>
+                                <div style="font-size:11px;font-weight:700;letter-spacing:3px;color:#9333ea;text-transform:uppercase;margin-bottom:16px">SEO & Performance</div>
+                                <div style="font-size:32px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:12px">En Google<br>en 3 meses.<br>Garantizado.</div>
+                                <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6">Velocidad &lt;1s, Core Web Vitals perfectos, posicionamiento orgánico.</div>
+                            </div>
+                            <!-- Metrics -->
+                            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px">
+                                <div style="background:rgba(147,51,234,0.15);border:1px solid rgba(147,51,234,0.3);border-radius:10px;padding:14px">
+                                    <div style="font-size:28px;font-weight:900;color:#9333ea;line-height:1">98</div>
+                                    <div style="font-size:9px;color:rgba(255,255,255,0.5);margin-top:4px">Performance Score</div>
+                                </div>
+                                <div style="background:rgba(147,51,234,0.15);border:1px solid rgba(147,51,234,0.3);border-radius:10px;padding:14px">
+                                    <div style="font-size:28px;font-weight:900;color:#9333ea;line-height:1">0.8s</div>
+                                    <div style="font-size:9px;color:rgba(255,255,255,0.5);margin-top:4px">Tiempo de Carga</div>
+                                </div>
+                                <div style="background:rgba(147,51,234,0.1);border:1px solid rgba(147,51,234,0.2);border-radius:10px;padding:14px">
+                                    <div style="font-size:24px;font-weight:900;color:#c084fc;line-height:1">#1</div>
+                                    <div style="font-size:9px;color:rgba(255,255,255,0.5);margin-top:4px">Posición Google</div>
+                                </div>
+                                <div style="background:rgba(147,51,234,0.1);border:1px solid rgba(147,51,234,0.2);border-radius:10px;padding:14px">
+                                    <div style="font-size:24px;font-weight:900;color:#c084fc;line-height:1">+312%</div>
+                                    <div style="font-size:9px;color:rgba(255,255,255,0.5);margin-top:4px">Tráfico Orgánico</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4: AUTOMATIZACIÓN -->
+                    <div class="service-visual" data-visual="4" style="background:#0f0a00;">
+                        <div style="width:100%;height:100%;padding:32px;display:flex;flex-direction:column;justify-content:space-between;font-family:'Inter',sans-serif;">
+                            <div>
+                                <div style="font-size:11px;font-weight:700;letter-spacing:3px;color:#f97316;text-transform:uppercase;margin-bottom:16px">Automatización</div>
+                                <div style="font-size:32px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:12px">20 horas/mes<br>ahorradas.<br>Sin esfuerzo.</div>
+                                <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6">Workflows con n8n, Make y Zapier conectados a tu tienda.</div>
+                            </div>
+                            <!-- Flow diagram -->
+                            <div style="display:flex;flex-direction:column;gap:6px">
+                                <div style="display:flex;align-items:center;gap:8px">
+                                    <div style="background:rgba(249,115,22,0.2);border:1px solid rgba(249,115,22,0.4);border-radius:8px;padding:8px 12px;font-size:10px;font-weight:600;color:#f97316;white-space:nowrap">Venta Shopify</div>
+                                    <div style="flex:1;height:1px;background:rgba(249,115,22,0.3);position:relative">
+                                        <div style="position:absolute;right:-4px;top:-4px;font-size:10px;color:#f97316">→</div>
+                                    </div>
+                                    <div style="background:rgba(249,115,22,0.2);border:1px solid rgba(249,115,22,0.4);border-radius:8px;padding:8px 12px;font-size:10px;font-weight:600;color:#f97316;white-space:nowrap">Email Auto</div>
+                                </div>
+                                <div style="display:flex;justify-content:center">
+                                    <div style="width:1px;height:14px;background:rgba(249,115,22,0.3)"></div>
+                                </div>
+                                <div style="display:flex;align-items:center;gap:8px">
+                                    <div style="background:rgba(249,115,22,0.2);border:1px solid rgba(249,115,22,0.4);border-radius:8px;padding:8px 12px;font-size:10px;font-weight:600;color:#f97316;white-space:nowrap">CRM Update</div>
+                                    <div style="flex:1;height:1px;background:rgba(249,115,22,0.3);position:relative">
+                                        <div style="position:absolute;right:-4px;top:-4px;font-size:10px;color:#f97316">→</div>
+                                    </div>
+                                    <div style="background:rgba(249,115,22,0.2);border:1px solid rgba(249,115,22,0.4);border-radius:8px;padding:8px 12px;font-size:10px;font-weight:600;color:#f97316;white-space:nowrap">Analytics</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5: ESTRATEGIA DIGITAL -->
+                    <div class="service-visual" data-visual="5" style="background:#001220;">
+                        <div style="width:100%;height:100%;padding:32px;display:flex;flex-direction:column;justify-content:space-between;font-family:'Inter',sans-serif;">
+                            <div>
+                                <div style="font-size:11px;font-weight:700;letter-spacing:3px;color:#0ea5e9;text-transform:uppercase;margin-bottom:16px">Estrategia Digital</div>
+                                <div style="font-size:32px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:12px">Del cero a<br>6 cifras en<br>12 meses.</div>
+                                <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6">Roadmap probado, análisis de competencia LATAM y funnels optimizados.</div>
+                            </div>
+                            <!-- Growth chart -->
+                            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(14,165,233,0.2);border-radius:12px;padding:16px">
+                                <div style="font-size:9px;color:rgba(255,255,255,0.4);margin-bottom:12px;letter-spacing:1px">PROYECCIÓN DE CRECIMIENTO</div>
+                                <div style="display:flex;align-items:flex-end;gap:6px;height:60px">
+                                    <div style="flex:1;background:rgba(14,165,233,0.2);border-radius:4px 4px 0 0;height:20%"></div>
+                                    <div style="flex:1;background:rgba(14,165,233,0.3);border-radius:4px 4px 0 0;height:35%"></div>
+                                    <div style="flex:1;background:rgba(14,165,233,0.4);border-radius:4px 4px 0 0;height:50%"></div>
+                                    <div style="flex:1;background:rgba(14,165,233,0.55);border-radius:4px 4px 0 0;height:68%"></div>
+                                    <div style="flex:1;background:rgba(14,165,233,0.7);border-radius:4px 4px 0 0;height:82%"></div>
+                                    <div style="flex:1;background:#0ea5e9;border-radius:4px 4px 0 0;height:100%;box-shadow:0 0 12px rgba(14,165,233,0.5)"></div>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;margin-top:6px">
+                                    <span style="font-size:8px;color:rgba(255,255,255,0.25)">Mes 1</span>
+                                    <span style="font-size:8px;color:rgba(255,255,255,0.25)">Mes 3</span>
+                                    <span style="font-size:8px;color:#0ea5e9;font-weight:700">Mes 12 🎯</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -1649,61 +1820,157 @@
             activateService(idx);
         });
 
-        // ─── CASE STUDIES: GENERATE 3D CONVEYOR CARDS ───────────────────────────
+        // ─── CASE STUDIES: HTML/CSS WEBSITE MOCKUPS ──────────────────────────────
         const caseProjects = [
-            { title: 'Aura Moda', category: 'Luxury Fashion', image: 'carousel-1-moda.png' },
-            { title: 'Apex Active', category: 'Athletic Wear', image: 'carousel-2-deportes.png' },
-            { title: 'Aurelia', category: 'Skincare', image: 'carousel-3-belleza.png' },
-            { title: 'Villa Design', category: 'Furniture', image: 'carousel-4-muebles.png' },
-            { title: 'Urban Vibes', category: 'Streetwear', image: 'carousel-5-casual.png' },
+            {
+                title: 'Aura Moda', category: 'Moda de Lujo', url: 'www.auramoda.co',
+                accent: '#c9a96e', bg: '#0d0d0d', text: '#f5f0e8',
+                nav: ['Inicio','Colección','Diseñadores','Contacto'],
+                hero: 'Nueva Colección\nPrimavera 2025',
+                sub: 'Piezas únicas para mujeres únicas',
+                products: [
+                    { name: 'Vestido Seda', price: '$890.000', tag: 'NUEVO' },
+                    { name: 'Blazer Lino', price: '$650.000', tag: '' },
+                    { name: 'Conjunto Noche', price: '$1.200.000', tag: 'EXCLUSIVO' },
+                ]
+            },
+            {
+                title: 'Apex Active', category: 'Ropa Deportiva', url: 'www.apexactive.com.co',
+                accent: '#00e5ff', bg: '#0a1628', text: '#ffffff',
+                nav: ['Inicio','Tienda','Entrenamiento','Blog'],
+                hero: 'Supera Tus\nLímites',
+                sub: 'Gear de alto rendimiento para atletas reales',
+                products: [
+                    { name: 'Camiseta Pro', price: '$89.000', tag: 'BESTSELLER' },
+                    { name: 'Licra Compresión', price: '$145.000', tag: '' },
+                    { name: 'Kit Gym', price: '$320.000', tag: '-20%' },
+                ]
+            },
+            {
+                title: 'Aurelia', category: 'Skincare Premium', url: 'www.aurelia.co',
+                accent: '#d4a0a0', bg: '#faf7f5', text: '#2d2d2d',
+                nav: ['Inicio','Rutinas','Ingredientes','Blog'],
+                hero: 'Tu Piel,\nNuestra Pasión',
+                sub: 'Fórmulas con ingredientes naturales de Colombia',
+                products: [
+                    { name: 'Sérum Vitamina C', price: '$185.000', tag: 'AGOTADO' },
+                    { name: 'Crema Hidratante', price: '$120.000', tag: 'NUEVO' },
+                    { name: 'Kit Noche', price: '$390.000', tag: 'KIT' },
+                ]
+            },
+            {
+                title: 'Villa Design', category: 'Muebles & Hogar', url: 'www.villadesign.co',
+                accent: '#8b6914', bg: '#1a1510', text: '#f2ead8',
+                nav: ['Inicio','Catálogo','Proyectos','Contacto'],
+                hero: 'Diseña\ntu Espacio',
+                sub: 'Muebles artesanales fabricados en Colombia',
+                products: [
+                    { name: 'Sofá Oslo', price: '$2.800.000', tag: 'OFERTA' },
+                    { name: 'Mesa Roble', price: '$1.450.000', tag: '' },
+                    { name: 'Silla Eames', price: '$890.000', tag: 'POPULAR' },
+                ]
+            },
+            {
+                title: 'Urban Vibes', category: 'Streetwear', url: 'www.urbanvibes.co',
+                accent: '#f5c518', bg: '#111111', text: '#ffffff',
+                nav: ['Drops','Tienda','Lookbook','About'],
+                hero: 'Tu Estilo,\nTu Regla',
+                sub: 'Drops exclusivos cada semana — sé el primero',
+                products: [
+                    { name: 'Hoodie UV001', price: '$195.000', tag: 'DROP' },
+                    { name: 'Cargo Pants', price: '$245.000', tag: 'LIMITADO' },
+                    { name: 'Sneakers V2', price: '$380.000', tag: 'NUEVO' },
+                ]
+            }
         ];
+
+        function buildWebsiteMockup(p) {
+            const isDark = p.bg !== '#faf7f5';
+            const borderColor = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)';
+            const subTextColor = isDark ? 'rgba(255,255,255,0.55)' : 'rgba(0,0,0,0.5)';
+            const cardBg = isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.04)';
+            const navLinks = p.nav.map(n =>
+                `<span style="font-size:9px;opacity:0.65;cursor:pointer;white-space:nowrap">${n}</span>`
+            ).join('');
+
+            const productCards = p.products.map(prod => `
+                <div style="background:${cardBg};border-radius:6px;padding:10px;border:1px solid ${borderColor};">
+                    <div style="width:100%;height:52px;border-radius:4px;background:${p.accent}22;margin-bottom:8px;display:flex;align-items:center;justify-content:center;">
+                        <span style="font-size:18px;opacity:0.4">${prod.name.charAt(0)}</span>
+                    </div>
+                    <div style="font-size:9px;font-weight:600;color:${p.text};margin-bottom:3px;line-height:1.2">${prod.name}</div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;">
+                        <span style="font-size:10px;font-weight:800;color:${p.accent}">${prod.price}</span>
+                        ${prod.tag ? `<span style="font-size:7px;padding:2px 5px;background:${p.accent};color:${isDark?'#000':'#fff'};border-radius:3px;font-weight:700">${prod.tag}</span>` : ''}
+                    </div>
+                </div>
+            `).join('');
+
+            return `
+                <div style="width:100%;height:100%;background:${p.bg};display:flex;flex-direction:column;font-family:'Inter',sans-serif;overflow:hidden;">
+                    <!-- NAV -->
+                    <div style="padding:10px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid ${borderColor};flex-shrink:0">
+                        <span style="font-size:12px;font-weight:900;letter-spacing:-0.5px;color:${p.text}">${p.title}</span>
+                        <div style="display:flex;gap:14px;align-items:center">${navLinks}</div>
+                        <div style="display:flex;gap:8px;align-items:center">
+                            <div style="width:22px;height:22px;border-radius:4px;background:${p.accent};display:flex;align-items:center;justify-content:center;font-size:11px">🛒</div>
+                        </div>
+                    </div>
+                    <!-- HERO -->
+                    <div style="padding:18px 16px 14px;border-bottom:1px solid ${borderColor};flex-shrink:0;background:linear-gradient(135deg,${p.accent}15,transparent)">
+                        <div style="font-size:9px;font-weight:600;color:${p.accent};letter-spacing:2px;text-transform:uppercase;margin-bottom:6px">
+                            ✦ ${p.category}
+                        </div>
+                        <div style="font-size:18px;font-weight:900;color:${p.text};line-height:1.15;letter-spacing:-0.5px;white-space:pre-line;margin-bottom:7px">${p.hero}</div>
+                        <div style="font-size:9px;color:${subTextColor};margin-bottom:12px;line-height:1.4">${p.sub}</div>
+                        <div style="display:flex;gap:8px">
+                            <div style="padding:6px 14px;background:${p.accent};border-radius:5px;font-size:9px;font-weight:700;color:${isDark?'#000':'#fff'}">Comprar Ahora</div>
+                            <div style="padding:6px 14px;border:1px solid ${borderColor};border-radius:5px;font-size:9px;font-weight:600;color:${p.text};opacity:0.7">Ver Todo</div>
+                        </div>
+                    </div>
+                    <!-- PRODUCTS -->
+                    <div style="padding:12px 16px;flex:1;overflow:hidden">
+                        <div style="font-size:9px;font-weight:700;color:${p.text};opacity:0.5;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px">PRODUCTOS DESTACADOS</div>
+                        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">${productCards}</div>
+                    </div>
+                    <!-- FOOTER BAR -->
+                    <div style="padding:8px 16px;border-top:1px solid ${borderColor};display:flex;align-items:center;justify-content:space-between;flex-shrink:0">
+                        <span style="font-size:8px;color:${subTextColor}">${p.url}</span>
+                        <div style="display:flex;gap:6px">
+                            <span style="font-size:8px;padding:3px 8px;border:1px solid ${borderColor};border-radius:3px;color:${subTextColor}">Instagram</span>
+                            <span style="font-size:8px;padding:3px 8px;border:1px solid ${borderColor};border-radius:3px;color:${subTextColor}">WhatsApp</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
 
         function generateCaseCards() {
             const beltElement = document.getElementById('casesBelt');
             if (!beltElement) return;
 
-            // Generate 10 cards (5 projects × 2 for seamless looping)
             for (let i = 0; i < 10; i++) {
                 const project = caseProjects[i % 5];
                 const card = document.createElement('div');
                 card.className = 'conv-card';
 
+                // Browser chrome bar
                 const mockupBar = document.createElement('div');
                 mockupBar.className = 'mockup-bar';
-
-                // Color dots
-                const dot1 = document.createElement('div');
-                dot1.className = 'mockup-dot';
-                dot1.style.background = '#ff3366';
-
-                const dot2 = document.createElement('div');
-                dot2.className = 'mockup-dot';
-                dot2.style.background = '#ffaa00';
-
-                const dot3 = document.createElement('div');
-                dot3.className = 'mockup-dot';
-                dot3.style.background = '#00dd00';
-
-                const urlBar = document.createElement('div');
-                urlBar.className = 'mockup-url';
-
-                mockupBar.appendChild(dot1);
-                mockupBar.appendChild(dot2);
-                mockupBar.appendChild(dot3);
-                mockupBar.appendChild(urlBar);
-
-                const mockupBody = document.createElement('div');
-                mockupBody.className = 'mockup-body';
-                mockupBody.style.backgroundImage = `url('${project.image}')`;
-                mockupBody.style.backgroundSize = 'cover';
-                mockupBody.style.backgroundPosition = 'center';
-                mockupBody.style.backgroundRepeat = 'no-repeat';
-                mockupBody.innerHTML = `
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);">
-                        <h3 style="margin: 0 0 4px; font-size: 18px; font-weight: 600; color: white;">${project.title}</h3>
-                        <p style="margin: 0; font-size: 12px; color: rgba(255,255,255,0.8);">${project.category}</p>
+                mockupBar.innerHTML = `
+                    <div class="mockup-dot" style="background:#ff5f57"></div>
+                    <div class="mockup-dot" style="background:#ffbd2e"></div>
+                    <div class="mockup-dot" style="background:#28c840"></div>
+                    <div class="mockup-url" style="font-size:8px;color:rgba(255,255,255,0.4);display:flex;align-items:center;padding:0 8px;letter-spacing:0.3px">
+                        🔒 ${project.url}
                     </div>
                 `;
+
+                // Website mockup body
+                const mockupBody = document.createElement('div');
+                mockupBody.className = 'mockup-body';
+                mockupBody.style.cssText = 'padding:0;justify-content:flex-start;';
+                mockupBody.innerHTML = buildWebsiteMockup(project);
 
                 card.appendChild(mockupBar);
                 card.appendChild(mockupBody);
