@@ -1028,10 +1028,10 @@
     <header class="dark">
         <div class="logo">automate<span style="color: #3b82f6;">.</span></div>
         <nav>
-            <a href="#servicios">Servicios</a>
+            <a href="#templates">Diseños</a>
             <a href="#casos">Casos</a>
-            <a href="#equipo">Equipo</a>
             <a href="#precios">Precios</a>
+            <a href="#faq">FAQ</a>
             <a href="#contacto" class="nav-cta">Contacto</a>
         </nav>
     </header>
@@ -1060,6 +1060,30 @@
             <svg viewBox="0 0 24 24">
                 <path d="M12 5v14M12 19l-3-3M12 19l3-3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section id="stats-bar" style="padding:0 60px 60px;">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(128,128,128,0.12);border-radius:16px;overflow:hidden;">
+                <div style="padding:32px;text-align:center;border-right:1px solid rgba(128,128,128,0.1);">
+                    <div style="font-size:44px;font-weight:900;letter-spacing:-2px;line-height:1;">50+</div>
+                    <div style="font-size:11px;color:rgba(128,128,128,0.7);letter-spacing:2px;text-transform:uppercase;margin-top:8px;">Tiendas lanzadas</div>
+                </div>
+                <div style="padding:32px;text-align:center;border-right:1px solid rgba(128,128,128,0.1);">
+                    <div style="font-size:44px;font-weight:900;letter-spacing:-2px;line-height:1;">7–15</div>
+                    <div style="font-size:11px;color:rgba(128,128,128,0.7);letter-spacing:2px;text-transform:uppercase;margin-top:8px;">Días de entrega</div>
+                </div>
+                <div style="padding:32px;text-align:center;border-right:1px solid rgba(128,128,128,0.1);">
+                    <div style="font-size:44px;font-weight:900;color:#3b82f6;letter-spacing:-2px;line-height:1;">4.9★</div>
+                    <div style="font-size:11px;color:rgba(128,128,128,0.7);letter-spacing:2px;text-transform:uppercase;margin-top:8px;">Rating promedio</div>
+                </div>
+                <div style="padding:32px;text-align:center;">
+                    <div style="font-size:44px;font-weight:900;letter-spacing:-2px;line-height:1;">100%</div>
+                    <div style="font-size:11px;color:rgba(128,128,128,0.7);letter-spacing:2px;text-transform:uppercase;margin-top:8px;">Clientes satisfechos</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1197,594 +1221,6 @@
         </div>
     </section>
 
-    <!-- PRE-REQUISITOS -->
-    <section id="pre-requisitos" style="padding:140px 60px; background:#050810; position:relative; overflow:hidden;">
-        <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse 900px 700px at 75% 50%, rgba(99,102,241,0.07) 0%, transparent 70%);pointer-events:none;"></div>
-        <div style="position:absolute;top:-300px;right:-300px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle, rgba(239,68,68,0.05) 0%, transparent 70%);pointer-events:none;"></div>
-        <div class="container" style="position:relative;z-index:1;">
-            <!-- Header split -->
-            <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:72px;flex-wrap:wrap;gap:32px;">
-                <div>
-                    <div style="font-size:11px;font-weight:700;letter-spacing:4px;color:#ef4444;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:12px;"><span style="width:32px;height:1px;background:#ef4444;display:inline-block;"></span>Pre-Requisitos</div>
-                    <h2 style="font-size:clamp(36px,4.5vw,58px);font-weight:900;color:#fff;letter-spacing:-2px;line-height:1.05;margin:0 0 20px;">Lo que necesitamos<br><span style="color:#ef4444;">antes del Día 1</span></h2>
-                    <p style="font-size:16px;color:rgba(255,255,255,0.45);max-width:460px;line-height:1.8;margin:0;">Sin estos elementos no iniciamos el proyecto. Este checklist garantiza que podamos entregarte resultados en tiempo récord, sin demoras ni sorpresas.</p>
-                </div>
-                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:24px;padding:36px 44px;text-align:center;flex-shrink:0;">
-                    <div style="font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:12px;letter-spacing:2px;text-transform:uppercase;">Checklist de inicio</div>
-                    <div style="font-size:64px;font-weight:900;color:#fff;line-height:1;margin-bottom:8px;letter-spacing:-3px;">6<span style="font-size:24px;color:rgba(255,255,255,0.2);font-weight:400;"> ítems</span></div>
-                    <div style="font-size:13px;color:#10b981;font-weight:700;letter-spacing:0.5px;margin-bottom:20px;">todos obligatorios</div>
-                    <div style="height:4px;background:rgba(255,255,255,0.06);border-radius:4px;overflow:hidden;"><div style="height:100%;width:100%;background:linear-gradient(90deg,#ef4444,#7c3aed);border-radius:4px;"></div></div>
-                </div>
-            </div>
-
-            <!-- 3-col card grid -->
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
-                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:32px;position:relative;overflow:hidden;cursor:default;transition:border-color 0.25s,background 0.25s;" onmouseover="this.style.borderColor='rgba(239,68,68,0.4)';this.style.background='rgba(239,68,68,0.04)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.background='rgba(255,255,255,0.03)'">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#ef4444,transparent);"></div>
-                    <div style="width:52px;height:52px;border-radius:16px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg></div>
-                    <h4 style="font-size:17px;font-weight:800;color:#fff;margin:0 0 10px;letter-spacing:-0.3px;">Assets Visuales</h4>
-                    <p style="font-size:13.5px;color:rgba(255,255,255,0.4);margin:0 0 20px;line-height:1.75;">Logo SVG/PNG transparente, fotos de productos en fondo blanco o lifestyle, banner principal y favicon en alta resolución.</p>
-                    <div style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#ef4444;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:7px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;flex-shrink:0;"></span>Obligatorio</div>
-                </div>
-                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:32px;position:relative;overflow:hidden;cursor:default;transition:border-color 0.25s,background 0.25s;" onmouseover="this.style.borderColor='rgba(59,130,246,0.4)';this.style.background='rgba(59,130,246,0.04)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.background='rgba(255,255,255,0.03)'">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#3b82f6,transparent);"></div>
-                    <div style="width:52px;height:52px;border-radius:16px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"/></svg></div>
-                    <h4 style="font-size:17px;font-weight:800;color:#fff;margin:0 0 10px;letter-spacing:-0.3px;">Catálogo de Productos</h4>
-                    <p style="font-size:13.5px;color:rgba(255,255,255,0.4);margin:0 0 20px;line-height:1.75;">Nombre, descripción, precio, precio comparativo, SKU, variantes (talla/color), inventario inicial y categorías definidas.</p>
-                    <div style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#ef4444;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:7px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;flex-shrink:0;"></span>Obligatorio</div>
-                </div>
-                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:32px;position:relative;overflow:hidden;cursor:default;transition:border-color 0.25s,background 0.25s;" onmouseover="this.style.borderColor='rgba(124,58,237,0.4)';this.style.background='rgba(124,58,237,0.04)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.background='rgba(255,255,255,0.03)'">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#7c3aed,transparent);"></div>
-                    <div style="width:52px;height:52px;border-radius:16px;background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
-                    <h4 style="font-size:17px;font-weight:800;color:#fff;margin:0 0 10px;letter-spacing:-0.3px;">Referentes de Estilo</h4>
-                    <p style="font-size:13.5px;color:rgba(255,255,255,0.4);margin:0 0 20px;line-height:1.75;">2–3 URLs de tiendas de referencia con notas de qué elementos quieres replicar: layout, colores, tipografía.</p>
-                    <div style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#ef4444;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:7px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;flex-shrink:0;"></span>Obligatorio</div>
-                </div>
-                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:32px;position:relative;overflow:hidden;cursor:default;transition:border-color 0.25s,background 0.25s;" onmouseover="this.style.borderColor='rgba(16,185,129,0.4)';this.style.background='rgba(16,185,129,0.04)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.background='rgba(255,255,255,0.03)'">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#10b981,transparent);"></div>
-                    <div style="width:52px;height:52px;border-radius:16px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg></div>
-                    <h4 style="font-size:17px;font-weight:800;color:#fff;margin:0 0 10px;letter-spacing:-0.3px;">Contenido Escrito</h4>
-                    <p style="font-size:13.5px;color:rgba(255,255,255,0.4);margin:0 0 20px;line-height:1.75;">Sobre Nosotros, FAQ, políticas de envío y devoluciones, descripciones de colecciones y cualquier página adicional.</p>
-                    <div style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#ef4444;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:7px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;flex-shrink:0;"></span>Obligatorio</div>
-                </div>
-                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:32px;position:relative;overflow:hidden;cursor:default;transition:border-color 0.25s,background 0.25s;" onmouseover="this.style.borderColor='rgba(245,158,11,0.4)';this.style.background='rgba(245,158,11,0.04)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.background='rgba(255,255,255,0.03)'">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#f59e0b,transparent);"></div>
-                    <div style="width:52px;height:52px;border-radius:16px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg></div>
-                    <h4 style="font-size:17px;font-weight:800;color:#fff;margin:0 0 10px;letter-spacing:-0.3px;">Dominio y Cuenta</h4>
-                    <p style="font-size:13.5px;color:rgba(255,255,255,0.4);margin:0 0 20px;line-height:1.75;">Dominio comprado o a contratar. Cuenta Shopify activa con plan seleccionado o trial configurado y listo para trabajar.</p>
-                    <div style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#ef4444;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:7px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;flex-shrink:0;"></span>Obligatorio</div>
-                </div>
-                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:20px;padding:32px;position:relative;overflow:hidden;cursor:default;transition:border-color 0.25s,background 0.25s;" onmouseover="this.style.borderColor='rgba(236,72,153,0.4)';this.style.background='rgba(236,72,153,0.04)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.background='rgba(255,255,255,0.03)'">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#ec4899,transparent);"></div>
-                    <div style="width:52px;height:52px;border-radius:16px;background:rgba(236,72,153,0.1);border:1px solid rgba(236,72,153,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"/></svg></div>
-                    <h4 style="font-size:17px;font-weight:800;color:#fff;margin:0 0 10px;letter-spacing:-0.3px;">Info de Negocio</h4>
-                    <p style="font-size:13.5px;color:rgba(255,255,255,0.4);margin:0 0 20px;line-height:1.75;">Datos empresa, impuestos, zonas de envío y tarifas, métodos de pago preferidos y moneda principal del negocio.</p>
-                    <div style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#ef4444;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:7px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;flex-shrink:0;"></span>Obligatorio</div>
-                </div>
-            </div>
-
-            <!-- Warning bar -->
-            <div style="margin-top:40px;background:rgba(239,68,68,0.05);border:1px solid rgba(239,68,68,0.14);border-radius:18px;padding:24px 32px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
-                <div style="width:46px;height:46px;border-radius:14px;background:rgba(239,68,68,0.1);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;">⚠️</div>
-                <div style="flex:1;">
-                    <div style="font-size:15px;font-weight:700;color:#fff;margin-bottom:4px;">Sin checklist completo, el proyecto no inicia</div>
-                    <div style="font-size:13px;color:rgba(255,255,255,0.38);">Todos los assets deben estar listos antes del Día 1. Esto garantiza cumplir el timeline prometido sin retrasos ni sorpresas de último minuto.</div>
-                </div>
-                <a href="#contacto" style="background:#ef4444;color:#fff;padding:12px 26px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap;flex-shrink:0;">Empezar ahora →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROCESO OPERATIVO -->
-    <section id="proceso-operativo" style="padding:140px 0; background:#030712; position:relative; overflow:hidden;">
-        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:1400px;height:700px;background:radial-gradient(ellipse, rgba(59,130,246,0.05) 0%, transparent 70%);pointer-events:none;"></div>
-        <div class="container" style="position:relative;z-index:1;padding:0 60px;">
-            <!-- Header -->
-            <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:64px;flex-wrap:wrap;gap:28px;">
-                <div>
-                    <div style="font-size:11px;font-weight:700;letter-spacing:4px;color:#3b82f6;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:12px;"><span style="width:32px;height:1px;background:#3b82f6;display:inline-block;"></span>Flujo de Trabajo</div>
-                    <h2 style="font-size:clamp(36px,4.5vw,58px);font-weight:900;color:#fff;letter-spacing:-2px;line-height:1.05;margin:0 0 16px;">De Cero a<br><span style="color:#3b82f6;">Tienda en Vivo</span></h2>
-                    <p style="font-size:16px;color:rgba(255,255,255,0.4);max-width:420px;line-height:1.7;margin:0;">9 pasos. 7–15 días. Sin sorpresas. Así ejecutamos cada proyecto de principio a fin.</p>
-                </div>
-                <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center;">
-                    <div style="display:flex;align-items:center;gap:8px;"><span style="width:8px;height:8px;border-radius:2px;background:#ef4444;display:inline-block;"></span><span style="font-size:12px;color:rgba(255,255,255,0.4);">Cliente</span></div>
-                    <div style="display:flex;align-items:center;gap:8px;"><span style="width:8px;height:8px;border-radius:2px;background:#3b82f6;display:inline-block;"></span><span style="font-size:12px;color:rgba(255,255,255,0.4);">Equipo AS</span></div>
-                    <div style="display:flex;align-items:center;gap:8px;"><span style="width:8px;height:8px;border-radius:2px;background:#10b981;display:inline-block;"></span><span style="font-size:12px;color:rgba(255,255,255,0.4);">Claude Code</span></div>
-                    <div style="display:flex;align-items:center;gap:8px;"><span style="width:8px;height:8px;border-radius:2px;background:#f59e0b;display:inline-block;"></span><span style="font-size:12px;color:rgba(255,255,255,0.4);">Revisión</span></div>
-                </div>
-            </div>
-
-            <!-- Step tab buttons -->
-            <div id="procesoTabs" style="display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap;">
-                <button onclick="showProcesoStep(0)" class="ptab ptab-active" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(59,130,246,0.6);background:rgba(59,130,246,0.15);color:#3b82f6;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">01</button>
-                <button onclick="showProcesoStep(1)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">02</button>
-                <button onclick="showProcesoStep(2)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">03</button>
-                <button onclick="showProcesoStep(3)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">04</button>
-                <button onclick="showProcesoStep(4)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">05</button>
-                <button onclick="showProcesoStep(5)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">06</button>
-                <button onclick="showProcesoStep(6)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">07</button>
-                <button onclick="showProcesoStep(7)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">08</button>
-                <button onclick="showProcesoStep(8)" class="ptab" style="padding:10px 18px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.4);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:inherit;">09</button>
-            </div>
-
-            <!-- Step panels -->
-            <div id="procesoPanel0" class="ppanel" style="display:block;">
-                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(239,68,68,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#ef4444,transparent);"></div>
-                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(239,68,68,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;font-variant-numeric:tabular-nums;user-select:none;">01</div>
-                    <div style="flex:1;padding-top:8px;">
-                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#ef4444;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#ef4444;text-transform:uppercase;">Cliente</span></div>
-                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Brief del Cliente</h3>
-                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Tu punto de partida. Compartes todos los assets, referencias de diseño, catálogo de productos y la identidad de tu marca. Sin esto, no arrancamos.</p>
-                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📎 Assets visuales</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🎯 Referencias de estilo</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📦 Catálogo completo</span>
-                        </div>
-                    </div>
-                    <div style="width:240px;min-width:240px;height:190px;border-radius:14px;overflow:hidden;position:relative;align-self:center;flex-shrink:0;"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80&fit=crop&auto=format" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.25),transparent);"></div></div>
-                </div>
-            </div>
-            <div id="procesoPanel1" class="ppanel" style="display:none;">
-                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(59,130,246,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#3b82f6,transparent);"></div>
-                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(59,130,246,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">02</div>
-                    <div style="flex:1;padding-top:8px;">
-                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#3b82f6;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#3b82f6;text-transform:uppercase;">Equipo AS</span></div>
-                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Setup del Proyecto</h3>
-                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Creamos el entorno completo de desarrollo: tienda Shopify de prueba, tema base seleccionado, repositorio Git y documentación interna del proyecto.</p>
-                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🏪 Tienda dev</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🎨 Tema base</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📂 Git + CLAUDE.md</span>
-                        </div>
-                    </div>
-                    <div style="width:240px;min-width:240px;height:190px;border-radius:14px;overflow:hidden;position:relative;align-self:center;flex-shrink:0;"><img src="https://images.unsplash.com/photo-1555066931-bf19f8fd1085?w=600&q=80&fit=crop&auto=format" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.25),transparent);"></div></div>
-                </div>
-            </div>
-            <div id="procesoPanel2" class="ppanel" style="display:none;">
-                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(16,185,129,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#10b981,transparent);"></div>
-                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(16,185,129,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">03</div>
-                    <div style="flex:1;padding-top:8px;">
-                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#10b981;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#10b981;text-transform:uppercase;">Claude Code</span></div>
-                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Personalización del Tema</h3>
-                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Claude Code personaliza el tema en base al brief: secciones custom, paleta de colores, tipografía, traducciones y experiencia optimizada para mobile.</p>
-                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">✨ Secciones custom</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🌍 Traducciones ES</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📱 Mobile-first</span>
-                        </div>
-                    </div>
-                    <div style="width:240px;min-width:240px;height:190px;border-radius:14px;overflow:hidden;position:relative;align-self:center;flex-shrink:0;"><img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80&fit=crop&auto=format" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.25),transparent);"></div></div>
-                </div>
-            </div>
-            <div id="procesoPanel3" class="ppanel" style="display:none;">
-                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(16,185,129,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#10b981,transparent);"></div>
-                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(16,185,129,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">04</div>
-                    <div style="flex:1;padding-top:8px;">
-                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#10b981;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#10b981;text-transform:uppercase;">Claude Code</span></div>
-                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Carga de Productos</h3>
-                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Importamos todo el catálogo de forma masiva vía CSV o GraphQL API. Variantes, imágenes optimizadas, metafields, colecciones y precios al 100%.</p>
-                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📊 CSV masivo</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">⚡ GraphQL CLI</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🖼️ Imágenes optimizadas</span>
-                        </div>
-                    </div>
-                    <div style="width:240px;min-width:240px;height:190px;border-radius:14px;overflow:hidden;position:relative;align-self:center;flex-shrink:0;"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80&fit=crop&auto=format" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.25),transparent);"></div></div>
-                </div>
-            </div>
-            <div id="procesoPanel4" class="ppanel" style="display:none;">
-                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(245,158,11,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#f59e0b,transparent);"></div>
-                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(245,158,11,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">05</div>
-                    <div style="flex:1;padding-top:8px;">
-                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#f59e0b;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#f59e0b;text-transform:uppercase;">Revisión conjunta</span></div>
-                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Preview al Cliente</h3>
-                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Entregamos el primer preview de la tienda. Tienes 24–48h para revisar y consolidar todos los ajustes en un único documento. Sin correcciones sueltas.</p>
-                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">👁️ Preview en vivo</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">⏰ 24–48h feedback</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📋 Un doc consolidado</span>
-                        </div>
-                    </div>
-                    <div style="width:240px;min-width:240px;height:190px;border-radius:14px;overflow:hidden;position:relative;align-self:center;flex-shrink:0;"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80&fit=crop&auto=format" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.25),transparent);"></div></div>
-                </div>
-            </div>
-            <div id="procesoPanel5" class="ppanel" style="display:none;">
-                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(59,130,246,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#3b82f6,transparent);"></div>
-                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(59,130,246,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">06</div>
-                    <div style="flex:1;padding-top:8px;">
-                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#3b82f6;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#3b82f6;text-transform:uppercase;">Equipo AS</span></div>
-                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Correcciones Ronda 2</h3>
-                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Aplicamos todos los ajustes del feedback consolidado: colores, textos, layout, imágenes, productos. Sin idas y vueltas — todo de una sola vez.</p>
-                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🎨 Colores y espaciados</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📝 Textos e imágenes</span>
-                        </div>
-                    </div>
-                    <div style="width:240px;min-width:240px;height:190px;border-radius:14px;overflow:hidden;position:relative;align-self:center;flex-shrink:0;"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80&fit=crop&auto=format" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.25),transparent);"></div></div>
-                </div>
-            </div>
-            <div id="procesoPanel6" class="ppanel" style="display:none;">
-                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(245,158,11,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#f59e0b,transparent);"></div>
-                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(245,158,11,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">07</div>
-                    <div style="flex:1;padding-top:8px;">
-                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#f59e0b;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#f59e0b;text-transform:uppercase;">Revisión conjunta</span></div>
-                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Ajustes Finales R3</h3>
-                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Última ronda de micro-ajustes: typos, links rotos, imágenes de detalle. Cambios estructurales en esta etapa generan un nuevo presupuesto.</p>
-                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🔤 Typos y links</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🔍 Detalles menores</span>
-                        </div>
-                    </div>
-                    <div style="width:240px;min-width:240px;height:190px;border-radius:14px;overflow:hidden;position:relative;align-self:center;flex-shrink:0;"><img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600&q=80&fit=crop&auto=format" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.25),transparent);"></div></div>
-                </div>
-            </div>
-            <div id="procesoPanel7" class="ppanel" style="display:none;">
-                <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(59,130,246,0.2);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#3b82f6,transparent);"></div>
-                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(59,130,246,0.1);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">08</div>
-                    <div style="flex:1;padding-top:8px;">
-                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.25);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="width:6px;height:6px;border-radius:50%;background:#3b82f6;display:inline-block;"></span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#3b82f6;text-transform:uppercase;">Equipo AS</span></div>
-                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">QA y Validación</h3>
-                        <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;margin:0 0 28px;max-width:520px;">Pruebas integrales en desktop, tablet y mobile. Lighthouse para performance y SEO técnico. Checkout flow completo. Cero bugs antes de publicar.</p>
-                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">⚡ Lighthouse</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">📱 Responsive testing</span>
-                            <span style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.45);">🛒 Checkout flow</span>
-                        </div>
-                    </div>
-                    <div style="width:240px;min-width:240px;height:190px;border-radius:14px;overflow:hidden;position:relative;align-self:center;flex-shrink:0;"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80&fit=crop&auto=format" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.25),transparent);"></div></div>
-                </div>
-            </div>
-            <div id="procesoPanel8" class="ppanel" style="display:none;">
-                <div style="background:linear-gradient(135deg,rgba(59,130,246,0.1) 0%,rgba(124,58,237,0.1) 100%);border:1px solid rgba(255,255,255,0.12);border-radius:24px;padding:56px 60px;display:flex;gap:60px;align-items:flex-start;position:relative;overflow:hidden;">
-                    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#3b82f6,#7c3aed,#ef4444);"></div>
-                    <div style="font-size:clamp(80px,10vw,130px);font-weight:900;color:rgba(255,255,255,0.07);line-height:1;letter-spacing:-4px;flex-shrink:0;user-select:none;">09</div>
-                    <div style="flex:1;padding-top:8px;">
-                        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:8px;padding:6px 14px;margin-bottom:24px;"><span style="font-size:14px;">🚀</span><span style="font-size:11px;font-weight:700;letter-spacing:2px;color:#fff;text-transform:uppercase;">Todos</span></div>
-                        <h3 style="font-size:clamp(22px,3vw,38px);font-weight:900;color:#fff;letter-spacing:-1px;margin:0 0 16px;line-height:1.1;">Lanzamiento</h3>
-                        <p style="font-size:16px;color:rgba(255,255,255,0.6);line-height:1.75;margin:0 0 28px;max-width:520px;">Publicamos la tienda en producción: conexión del dominio, activación de pasarelas de pago, configuración final de envíos. Tu marca, en vivo, vendiendo.</p>
-                        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-                            <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.65);">🌐 Dominio conectado</span>
-                            <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.65);">💳 Pagos activados</span>
-                            <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:8px 14px;font-size:12px;color:rgba(255,255,255,0.65);">📦 Envíos listos</span>
-                        </div>
-                    </div>
-                    <div style="width:240px;min-width:240px;height:190px;border-radius:14px;overflow:hidden;position:relative;align-self:center;flex-shrink:0;"><img src="https://images.unsplash.com/photo-1559136555-9303baea8eae?w=600&q=80&fit=crop&auto=format" alt="" style="width:100%;height:100%;object-fit:cover;" loading="lazy"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.25),transparent);"></div></div>
-                </div>
-            </div>
-
-            <!-- Progress bar -->
-            <div style="margin-top:24px;display:flex;align-items:center;gap:16px;">
-                <span id="procesoCounter" style="font-size:13px;color:rgba(255,255,255,0.3);font-weight:600;flex-shrink:0;">1 / 9</span>
-                <div style="flex:1;height:2px;background:rgba(255,255,255,0.06);border-radius:2px;overflow:hidden;">
-                    <div id="procesoBar" style="height:100%;width:11.1%;background:linear-gradient(90deg,#3b82f6,#7c3aed);border-radius:2px;transition:width 0.3s ease;"></div>
-                </div>
-                <div style="display:flex;gap:8px;">
-                    <button onclick="procesoNav(-1)" style="width:36px;height:36px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:rgba(255,255,255,0.5);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:inherit;transition:all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.08)'" onmouseout="this.style.background='rgba(255,255,255,0.04)'">←</button>
-                    <button onclick="procesoNav(1)" style="width:36px;height:36px;border-radius:8px;border:1px solid rgba(59,130,246,0.4);background:rgba(59,130,246,0.1);color:#3b82f6;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:inherit;transition:all 0.2s;" onmouseover="this.style.background='rgba(59,130,246,0.2)'" onmouseout="this.style.background='rgba(59,130,246,0.1)'">→</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <!-- SERVICES ACCORDION -->
-    <section id="servicios" style="padding: 120px 60px;">
-        <div class="container">
-            <div class="services-accordion-wrap">
-
-                <!-- LEFT: sticky title + accordion list -->
-                <div class="services-left">
-                    <div class="services-label">Lo que hacemos</div>
-                    <div class="services-title">NUESTROS<br>SERVICIOS</div>
-
-                    <ul class="service-list" id="serviceList">
-                        <li class="service-item active" data-index="0">
-                            <div class="service-item-header">
-                                <span class="service-item-name">E-COMMERCE</span>
-                                <span class="service-item-arrow">+</span>
-                            </div>
-                            <div class="service-item-body">
-                                <div class="service-item-big-title">E-COMMERCE</div>
-                                <p class="service-item-desc">Tiendas online optimizadas para conversiones. Integraciones de pago, inventario y logística completamente automatizadas.</p>
-                                <button class="service-learn-btn">
-                                    SABER MÁS
-                                    <span class="service-learn-btn-icon" style="color:#000;">↗</span>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="service-item" data-index="1">
-                            <div class="service-item-header">
-                                <span class="service-item-name">DISEÑO WEB + UX</span>
-                                <span class="service-item-arrow">+</span>
-                            </div>
-                            <div class="service-item-body">
-                                <div class="service-item-big-title">DISEÑO WEB + UX</div>
-                                <p class="service-item-desc">Interfases que venden. Cada elemento está posicionado para guiar al cliente hasta el checkout. Diseño responsivo, accesible y optimizado para conversión en mobile y desktop.</p>
-                                <button class="service-learn-btn">
-                                    SABER MÁS
-                                    <span class="service-learn-btn-icon" style="color:#000;">↗</span>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="service-item" data-index="2">
-                            <div class="service-item-header">
-                                <span class="service-item-name">DESARROLLO FULL STACK</span>
-                                <span class="service-item-arrow">+</span>
-                            </div>
-                            <div class="service-item-body">
-                                <div class="service-item-big-title">DESARROLLO FULL STACK</div>
-                                <p class="service-item-desc">E-commerce en React, Node.js, PostgreSQL. Integraciones con Shopify, WooCommerce, pagos (Stripe, Wompi, Mercado Pago). Arquitectura escalable que crece con tu negocio.</p>
-                                <button class="service-learn-btn">
-                                    SABER MÁS
-                                    <span class="service-learn-btn-icon" style="color:#000;">↗</span>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="service-item" data-index="3">
-                            <div class="service-item-header">
-                                <span class="service-item-name">SEO & PERFORMANCE</span>
-                                <span class="service-item-arrow">+</span>
-                            </div>
-                            <div class="service-item-body">
-                                <div class="service-item-big-title">SEO & PERFORMANCE</div>
-                                <p class="service-item-desc">Ranking en Google en 3-6 meses. Velocidad de carga <1s, optimización de imágenes, Core Web Vitals perfectos. Auditoría técnica completa y roadmap de posicionamiento.</p>
-                                <button class="service-learn-btn">
-                                    SABER MÁS
-                                    <span class="service-learn-btn-icon" style="color:#000;">↗</span>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="service-item" data-index="4">
-                            <div class="service-item-header">
-                                <span class="service-item-name">AUTOMATIZACIÓN</span>
-                                <span class="service-item-arrow">+</span>
-                            </div>
-                            <div class="service-item-body">
-                                <div class="service-item-big-title">AUTOMATIZACIÓN</div>
-                                <p class="service-item-desc">Flujos con n8n, Make y Zapier conectando Shopify → email → CRM → analytics. Workflows automáticos que ahorran 20hrs/mes y escalan ventas sin sumar operaciones.</p>
-                                <button class="service-learn-btn">
-                                    SABER MÁS
-                                    <span class="service-learn-btn-icon" style="color:#000;">↗</span>
-                                </button>
-                            </div>
-                        </li>
-                        <li class="service-item" data-index="5">
-                            <div class="service-item-header">
-                                <span class="service-item-name">ESTRATEGIA DIGITAL</span>
-                                <span class="service-item-arrow">+</span>
-                            </div>
-                            <div class="service-item-body">
-                                <div class="service-item-big-title">ESTRATEGIA DIGITAL</div>
-                                <p class="service-item-desc">Auditoría de competencia, análisis de mercado LATAM, roadmap de growth. Testing de niches, A/B testing, optimización de funnels. Consultoría de 3 meses con entregables claros.</p>
-                                <button class="service-learn-btn">
-                                    SABER MÁS
-                                    <span class="service-learn-btn-icon" style="color:#000;">↗</span>
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- RIGHT: sticky visual panel -->
-                <div class="services-right">
-
-                    <!-- 0: E-COMMERCE -->
-                    <div class="service-visual active" data-visual="0" style="background:#0a0e1a;">
-                        <div style="width:100%;height:100%;padding:32px;display:flex;flex-direction:column;justify-content:space-between;font-family:'Inter',sans-serif;">
-                            <div>
-                                <div style="font-size:11px;font-weight:700;letter-spacing:3px;color:#3b82f6;text-transform:uppercase;margin-bottom:16px">E-Commerce</div>
-                                <div style="font-size:32px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:12px">Tu tienda,<br>lista en<br>6 semanas.</div>
-                                <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6">Pasarelas de pago, inventario y logística integrados desde el día uno.</div>
-                            </div>
-                            <!-- Mini store preview -->
-                            <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:16px;">
-                                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
-                                    <span style="font-size:10px;font-weight:700;color:#fff;opacity:0.7">MI TIENDA</span>
-                                    <span style="font-size:10px;color:#3b82f6">🛒 3 items</span>
-                                </div>
-                                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
-                                    <div style="background:rgba(59,130,246,0.15);border-radius:6px;padding:10px;text-align:center">
-                                        <div style="font-size:18px;margin-bottom:4px">👗</div>
-                                        <div style="font-size:8px;color:#fff;opacity:0.7">$89.000</div>
-                                    </div>
-                                    <div style="background:rgba(59,130,246,0.15);border-radius:6px;padding:10px;text-align:center">
-                                        <div style="font-size:18px;margin-bottom:4px">👟</div>
-                                        <div style="font-size:8px;color:#fff;opacity:0.7">$245.000</div>
-                                    </div>
-                                    <div style="background:rgba(59,130,246,0.25);border-radius:6px;padding:10px;text-align:center;border:1px solid #3b82f6">
-                                        <div style="font-size:18px;margin-bottom:4px">💄</div>
-                                        <div style="font-size:8px;color:#3b82f6;font-weight:700">NUEVO</div>
-                                    </div>
-                                </div>
-                                <div style="margin-top:10px;background:#3b82f6;border-radius:6px;padding:8px;text-align:center;font-size:10px;font-weight:700;color:#fff;">AGREGAR AL CARRITO</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 1: DISEÑO WEB + UX -->
-                    <div class="service-visual" data-visual="1" style="background:#0d0d14;">
-                        <div style="width:100%;height:100%;padding:32px;display:flex;flex-direction:column;justify-content:space-between;font-family:'Inter',sans-serif;">
-                            <div>
-                                <div style="font-size:11px;font-weight:700;letter-spacing:3px;color:#a855f7;text-transform:uppercase;margin-bottom:16px">Diseño Web</div>
-                                <div style="font-size:32px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:12px">Interfaces<br>que venden<br>solas.</div>
-                                <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6">Cada elemento guía al cliente hacia el checkout. Mobile-first siempre.</div>
-                            </div>
-                            <!-- Browser mockup -->
-                            <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;overflow:hidden;">
-                                <div style="background:#1a1a2e;padding:8px 12px;display:flex;align-items:center;gap:5px;border-bottom:1px solid rgba(255,255,255,0.06)">
-                                    <div style="width:7px;height:7px;border-radius:50%;background:#ff5f57"></div>
-                                    <div style="width:7px;height:7px;border-radius:50%;background:#ffbd2e"></div>
-                                    <div style="width:7px;height:7px;border-radius:50%;background:#28c840"></div>
-                                    <div style="flex:1;background:rgba(255,255,255,0.06);border-radius:4px;height:14px;margin-left:6px;display:flex;align-items:center;padding:0 8px;">
-                                        <span style="font-size:7px;color:rgba(255,255,255,0.3)">🔒 mitienda.co</span>
-                                    </div>
-                                </div>
-                                <div style="padding:12px;">
-                                    <div style="height:8px;width:60%;background:rgba(168,85,247,0.4);border-radius:4px;margin-bottom:6px"></div>
-                                    <div style="height:6px;width:80%;background:rgba(255,255,255,0.08);border-radius:4px;margin-bottom:4px"></div>
-                                    <div style="height:6px;width:50%;background:rgba(255,255,255,0.05);border-radius:4px;margin-bottom:10px"></div>
-                                    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:5px">
-                                        <div style="height:36px;background:rgba(168,85,247,0.15);border-radius:5px"></div>
-                                        <div style="height:36px;background:rgba(168,85,247,0.1);border-radius:5px"></div>
-                                        <div style="height:36px;background:rgba(168,85,247,0.2);border-radius:5px;border:1px solid rgba(168,85,247,0.4)"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2: DESARROLLO FULL STACK -->
-                    <div class="service-visual" data-visual="2" style="background:#061a12;">
-                        <div style="width:100%;height:100%;padding:32px;display:flex;flex-direction:column;justify-content:space-between;font-family:'Inter',sans-serif;">
-                            <div>
-                                <div style="font-size:11px;font-weight:700;letter-spacing:3px;color:#10b981;text-transform:uppercase;margin-bottom:16px">Full Stack</div>
-                                <div style="font-size:32px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:12px">Código que<br>escala con<br>tu negocio.</div>
-                                <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6">React, Node.js, Stripe, Shopify, MercadoPago. Todo conectado.</div>
-                            </div>
-                            <!-- Code block -->
-                            <div style="background:rgba(0,0,0,0.4);border:1px solid rgba(16,185,129,0.2);border-radius:12px;padding:16px;font-family:monospace;">
-                                <div style="font-size:9px;color:rgba(255,255,255,0.3);margin-bottom:8px">index.js — Integración Pagos</div>
-                                <div style="font-size:10px;line-height:1.8">
-                                    <span style="color:#10b981">const</span> <span style="color:#60a5fa">checkout</span> <span style="color:#fff">= await</span> <span style="color:#f59e0b">stripe</span><span style="color:#fff">.create({</span><br>
-                                    <span style="color:#fff;opacity:0.5">&nbsp;&nbsp;amount:</span> <span style="color:#a78bfa">89000</span><span style="color:#fff">,</span><br>
-                                    <span style="color:#fff;opacity:0.5">&nbsp;&nbsp;currency:</span> <span style="color:#86efac">'cop'</span><span style="color:#fff">,</span><br>
-                                    <span style="color:#fff;opacity:0.5">&nbsp;&nbsp;methods:</span> <span style="color:#86efac">['card','pse','nequi']</span><br>
-                                    <span style="color:#fff">});</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 3: SEO & PERFORMANCE -->
-                    <div class="service-visual" data-visual="3" style="background:#0a0514;">
-                        <div style="width:100%;height:100%;padding:32px;display:flex;flex-direction:column;justify-content:space-between;font-family:'Inter',sans-serif;">
-                            <div>
-                                <div style="font-size:11px;font-weight:700;letter-spacing:3px;color:#9333ea;text-transform:uppercase;margin-bottom:16px">SEO & Performance</div>
-                                <div style="font-size:32px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:12px">En Google<br>en 3 meses.<br>Garantizado.</div>
-                                <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6">Velocidad &lt;1s, Core Web Vitals perfectos, posicionamiento orgánico.</div>
-                            </div>
-                            <!-- Metrics -->
-                            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px">
-                                <div style="background:rgba(147,51,234,0.15);border:1px solid rgba(147,51,234,0.3);border-radius:10px;padding:14px">
-                                    <div style="font-size:28px;font-weight:900;color:#9333ea;line-height:1">98</div>
-                                    <div style="font-size:9px;color:rgba(255,255,255,0.5);margin-top:4px">Performance Score</div>
-                                </div>
-                                <div style="background:rgba(147,51,234,0.15);border:1px solid rgba(147,51,234,0.3);border-radius:10px;padding:14px">
-                                    <div style="font-size:28px;font-weight:900;color:#9333ea;line-height:1">0.8s</div>
-                                    <div style="font-size:9px;color:rgba(255,255,255,0.5);margin-top:4px">Tiempo de Carga</div>
-                                </div>
-                                <div style="background:rgba(147,51,234,0.1);border:1px solid rgba(147,51,234,0.2);border-radius:10px;padding:14px">
-                                    <div style="font-size:24px;font-weight:900;color:#c084fc;line-height:1">#1</div>
-                                    <div style="font-size:9px;color:rgba(255,255,255,0.5);margin-top:4px">Posición Google</div>
-                                </div>
-                                <div style="background:rgba(147,51,234,0.1);border:1px solid rgba(147,51,234,0.2);border-radius:10px;padding:14px">
-                                    <div style="font-size:24px;font-weight:900;color:#c084fc;line-height:1">+312%</div>
-                                    <div style="font-size:9px;color:rgba(255,255,255,0.5);margin-top:4px">Tráfico Orgánico</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 4: AUTOMATIZACIÓN -->
-                    <div class="service-visual" data-visual="4" style="background:#0f0a00;">
-                        <div style="width:100%;height:100%;padding:32px;display:flex;flex-direction:column;justify-content:space-between;font-family:'Inter',sans-serif;">
-                            <div>
-                                <div style="font-size:11px;font-weight:700;letter-spacing:3px;color:#f97316;text-transform:uppercase;margin-bottom:16px">Automatización</div>
-                                <div style="font-size:32px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:12px">20 horas/mes<br>ahorradas.<br>Sin esfuerzo.</div>
-                                <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6">Workflows con n8n, Make y Zapier conectados a tu tienda.</div>
-                            </div>
-                            <!-- Flow diagram -->
-                            <div style="display:flex;flex-direction:column;gap:6px">
-                                <div style="display:flex;align-items:center;gap:8px">
-                                    <div style="background:rgba(249,115,22,0.2);border:1px solid rgba(249,115,22,0.4);border-radius:8px;padding:8px 12px;font-size:10px;font-weight:600;color:#f97316;white-space:nowrap">Venta Shopify</div>
-                                    <div style="flex:1;height:1px;background:rgba(249,115,22,0.3);position:relative">
-                                        <div style="position:absolute;right:-4px;top:-4px;font-size:10px;color:#f97316">→</div>
-                                    </div>
-                                    <div style="background:rgba(249,115,22,0.2);border:1px solid rgba(249,115,22,0.4);border-radius:8px;padding:8px 12px;font-size:10px;font-weight:600;color:#f97316;white-space:nowrap">Email Auto</div>
-                                </div>
-                                <div style="display:flex;justify-content:center">
-                                    <div style="width:1px;height:14px;background:rgba(249,115,22,0.3)"></div>
-                                </div>
-                                <div style="display:flex;align-items:center;gap:8px">
-                                    <div style="background:rgba(249,115,22,0.2);border:1px solid rgba(249,115,22,0.4);border-radius:8px;padding:8px 12px;font-size:10px;font-weight:600;color:#f97316;white-space:nowrap">CRM Update</div>
-                                    <div style="flex:1;height:1px;background:rgba(249,115,22,0.3);position:relative">
-                                        <div style="position:absolute;right:-4px;top:-4px;font-size:10px;color:#f97316">→</div>
-                                    </div>
-                                    <div style="background:rgba(249,115,22,0.2);border:1px solid rgba(249,115,22,0.4);border-radius:8px;padding:8px 12px;font-size:10px;font-weight:600;color:#f97316;white-space:nowrap">Analytics</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 5: ESTRATEGIA DIGITAL -->
-                    <div class="service-visual" data-visual="5" style="background:#001220;">
-                        <div style="width:100%;height:100%;padding:32px;display:flex;flex-direction:column;justify-content:space-between;font-family:'Inter',sans-serif;">
-                            <div>
-                                <div style="font-size:11px;font-weight:700;letter-spacing:3px;color:#0ea5e9;text-transform:uppercase;margin-bottom:16px">Estrategia Digital</div>
-                                <div style="font-size:32px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:12px">Del cero a<br>6 cifras en<br>12 meses.</div>
-                                <div style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.6">Roadmap probado, análisis de competencia LATAM y funnels optimizados.</div>
-                            </div>
-                            <!-- Growth chart -->
-                            <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(14,165,233,0.2);border-radius:12px;padding:16px">
-                                <div style="font-size:9px;color:rgba(255,255,255,0.4);margin-bottom:12px;letter-spacing:1px">PROYECCIÓN DE CRECIMIENTO</div>
-                                <div style="display:flex;align-items:flex-end;gap:6px;height:60px">
-                                    <div style="flex:1;background:rgba(14,165,233,0.2);border-radius:4px 4px 0 0;height:20%"></div>
-                                    <div style="flex:1;background:rgba(14,165,233,0.3);border-radius:4px 4px 0 0;height:35%"></div>
-                                    <div style="flex:1;background:rgba(14,165,233,0.4);border-radius:4px 4px 0 0;height:50%"></div>
-                                    <div style="flex:1;background:rgba(14,165,233,0.55);border-radius:4px 4px 0 0;height:68%"></div>
-                                    <div style="flex:1;background:rgba(14,165,233,0.7);border-radius:4px 4px 0 0;height:82%"></div>
-                                    <div style="flex:1;background:#0ea5e9;border-radius:4px 4px 0 0;height:100%;box-shadow:0 0 12px rgba(14,165,233,0.5)"></div>
-                                </div>
-                                <div style="display:flex;justify-content:space-between;margin-top:6px">
-                                    <span style="font-size:8px;color:rgba(255,255,255,0.25)">Mes 1</span>
-                                    <span style="font-size:8px;color:rgba(255,255,255,0.25)">Mes 3</span>
-                                    <span style="font-size:8px;color:#0ea5e9;font-weight:700">Mes 12 🎯</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- RESULTS -->
-    <section class="light-bg" id="resultados">
-        <div class="container">
-            <h2>Resultados que Hablan Solos</h2>
-            <p class="section-subtitle">Números reales de clientes reales.</p>
-
-            <div class="results-grid">
-                <div class="result-item fade-in">
-                    <div class="result-metric">+312%</div>
-                    <div class="result-label">Aumento en Tráfico</div>
-                </div>
-                <div class="result-item fade-in">
-                    <div class="result-metric">+187%</div>
-                    <div class="result-label">Mejora Conversiones</div>
-                </div>
-                <div class="result-item fade-in">
-                    <div class="result-metric">-68%</div>
-                    <div class="result-label">Reducción Carga</div>
-                </div>
-                <div class="result-item fade-in">
-                    <div class="result-metric">4.9★</div>
-                    <div class="result-label">Rating Promedio</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- CASE STUDIES — conveyor belt -->
     <section id="casos" style="padding: 120px 0 140px; background:#000; color:white; overflow:hidden;">
         <div class="container" style="padding: 0 60px;">
@@ -1888,59 +1324,6 @@
                 <button onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})" style="display:inline-flex;align-items:center;gap:10px;background:#0f172a;color:#fff;border:none;padding:16px 36px;border-radius:50px;font-size:15px;font-weight:700;cursor:pointer;transition:all 0.3s;letter-spacing:-0.3px;" onmouseover="this.style.background='#3b82f6';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#0f172a';this.style.transform=''">
                     Ver todos los diseños &nbsp;→
                 </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEAM -->
-    <section class="light-bg" id="equipo">
-        <div class="container">
-            <h2>Nuestro Equipo</h2>
-            <p class="section-subtitle">Expertos en desarrollo, diseño y estrategia. Pequeño pero poderoso.</p>
-
-            <div class="team-grid">
-                <div class="team-member fade-in">
-                    <div class="team-avatar">🚀</div>
-                    <h3>Santiago García</h3>
-                    <p>CTO & Fundador</p>
-                    <span>Full stack developer • 8+ años experiencia</span>
-                </div>
-                <div class="team-member fade-in">
-                    <div class="team-avatar">🎨</div>
-                    <h3>Laura Martínez</h3>
-                    <p>Directora de Diseño</p>
-                    <span>UX/UI designer • Especialista conversión</span>
-                </div>
-                <div class="team-member fade-in">
-                    <div class="team-avatar">📈</div>
-                    <h3>Pablo Sánchez</h3>
-                    <p>Growth Strategist</p>
-                    <span>SEO & Analytics • Growth hacker</span>
-                </div>
-            </div>
-
-            <p style="text-align: center; margin-top: 80px; font-size: 18px; opacity: 0.8;">
-                Contamos con una red de especialistas en desarrollo, marketing, video y diseño para proyectos que lo requieren.
-            </p>
-        </div>
-    </section>
-
-    <!-- METRICS / SOCIAL PROOF -->
-    <section id="metricas" style="padding:100px 60px; background:#0f172a;">
-        <div class="container">
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center;max-width:900px;margin:0 auto;">
-                <div class="fade-in">
-                    <div class="count-up" data-target="50" style="font-size:72px;font-weight:900;color:#fff;line-height:1;letter-spacing:-3px;">0</div>
-                    <div style="font-size:13px;font-weight:700;letter-spacing:2px;color:#3b82f6;text-transform:uppercase;margin-top:12px;">Tiendas lanzadas</div>
-                </div>
-                <div class="fade-in" style="border-left:1px solid rgba(255,255,255,0.1);border-right:1px solid rgba(255,255,255,0.1);">
-                    <div style="font-size:72px;font-weight:900;color:#fff;line-height:1;letter-spacing:-3px;">7–15</div>
-                    <div style="font-size:13px;font-weight:700;letter-spacing:2px;color:#3b82f6;text-transform:uppercase;margin-top:12px;">Días de entrega</div>
-                </div>
-                <div class="fade-in">
-                    <div class="count-up" data-target="100" style="font-size:72px;font-weight:900;color:#fff;line-height:1;letter-spacing:-3px;">0</div>
-                    <div style="font-size:13px;font-weight:700;letter-spacing:2px;color:#3b82f6;text-transform:uppercase;margin-top:12px;">% Clientes satisfechos</div>
-                </div>
             </div>
         </div>
     </section>
@@ -2050,110 +1433,55 @@
         </div>
     </section>
 
-    <!-- SISTEMA DE CORRECCIONES -->
-    <section id="correcciones" style="padding:140px 60px; background:#0a0a18; position:relative; overflow:hidden;">
-        <div style="position:absolute;top:50%;left:0;right:0;height:700px;transform:translateY(-50%);background:radial-gradient(ellipse 900px 400px at 50% 50%, rgba(124,58,237,0.06) 0%, transparent 70%);pointer-events:none;"></div>
-        <div class="container" style="position:relative;z-index:1;">
-            <!-- Header -->
-            <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:72px;flex-wrap:wrap;gap:28px;">
-                <div>
-                    <div style="font-size:11px;font-weight:700;letter-spacing:4px;color:#7c3aed;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:12px;"><span style="width:32px;height:1px;background:#7c3aed;display:inline-block;"></span>Gestión de Cambios</div>
-                    <h2 style="font-size:clamp(36px,4.5vw,58px);font-weight:900;color:#fff;letter-spacing:-2px;line-height:1.05;margin:0 0 16px;">Sistema de<br><span style="color:#7c3aed;">Correcciones</span></h2>
-                    <p style="font-size:16px;color:rgba(255,255,255,0.4);max-width:480px;line-height:1.75;margin:0;">Proceso estructurado que protege el timeline sin sacrificar la satisfacción del cliente. Sin idas y vueltas infinitas.</p>
-                </div>
-                <div style="background:rgba(124,58,237,0.08);border:1px solid rgba(124,58,237,0.18);border-radius:18px;padding:24px 36px;text-align:center;flex-shrink:0;">
-                    <div style="font-size:44px;font-weight:900;color:#fff;letter-spacing:-2px;line-height:1;margin-bottom:6px;">4</div>
-                    <div style="font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:2px;text-transform:uppercase;">rondas máximo</div>
-                </div>
+    <!-- FAQ -->
+    <section id="faq" style="padding:120px 60px;">
+        <div class="container">
+            <div style="text-align:center;margin-bottom:56px;">
+                <div style="font-size:12px;font-weight:700;letter-spacing:3px;color:#3b82f6;text-transform:uppercase;margin-bottom:16px;">Preguntas frecuentes</div>
+                <h2 style="font-size:clamp(32px,4vw,52px);font-weight:900;letter-spacing:-1.5px;line-height:1.1;margin:0;">Todo lo que necesitás saber</h2>
             </div>
+            <div style="max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:8px;">
 
-            <!-- Timeline -->
-            <div style="position:relative;margin-bottom:52px;padding:0 24px;">
-                <div style="position:absolute;top:23px;left:calc(24px + 24px);right:calc(24px + 24px);height:1px;background:rgba(255,255,255,0.07);"></div>
-                <div style="display:flex;justify-content:space-between;position:relative;z-index:1;">
-                    <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
-                        <div style="width:46px;height:46px;border-radius:50%;background:#ef4444;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;box-shadow:0 0 24px rgba(239,68,68,0.35);border:2px solid rgba(239,68,68,0.4);">R0</div>
-                        <div style="font-size:11px;color:rgba(255,255,255,0.35);text-align:center;white-space:nowrap;letter-spacing:0.5px;">Inicio</div>
-                    </div>
-                    <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
-                        <div style="width:46px;height:46px;border-radius:50%;background:#f59e0b;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;box-shadow:0 0 24px rgba(245,158,11,0.35);border:2px solid rgba(245,158,11,0.4);">R1</div>
-                        <div style="font-size:11px;color:rgba(255,255,255,0.35);text-align:center;white-space:nowrap;letter-spacing:0.5px;">Día 3</div>
-                    </div>
-                    <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
-                        <div style="width:46px;height:46px;border-radius:50%;background:#10b981;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;box-shadow:0 0 24px rgba(16,185,129,0.35);border:2px solid rgba(16,185,129,0.4);">R2</div>
-                        <div style="font-size:11px;color:rgba(255,255,255,0.35);text-align:center;white-space:nowrap;letter-spacing:0.5px;">Día 4</div>
-                    </div>
-                    <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
-                        <div style="width:46px;height:46px;border-radius:50%;background:#7c3aed;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;box-shadow:0 0 24px rgba(124,58,237,0.35);border:2px solid rgba(124,58,237,0.4);">R3</div>
-                        <div style="font-size:11px;color:rgba(255,255,255,0.35);text-align:center;white-space:nowrap;letter-spacing:0.5px;">Día 5</div>
-                    </div>
-                    <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
-                        <div style="width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#7c3aed);display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 0 28px rgba(99,102,241,0.4);border:2px solid rgba(255,255,255,0.15);">🚀</div>
-                        <div style="font-size:11px;color:rgba(255,255,255,0.35);text-align:center;white-space:nowrap;letter-spacing:0.5px;">Lanzamiento</div>
-                    </div>
-                </div>
-            </div>
+                <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
+                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Qué necesito para empezar? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Logo, fotos de producto, catálogo completo (nombres, precios, variantes) y una cuenta Shopify activa. Si no tenés dominio, te ayudamos a elegir uno.</div>
+                </details>
 
-            <!-- 4 cards -->
-            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
-                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(239,68,68,0.15);border-radius:20px;padding:32px;position:relative;overflow:hidden;">
-                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ef4444,rgba(239,68,68,0.15));"></div>
-                    <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.2);border-radius:6px;padding:4px 11px;margin-bottom:20px;"><span style="font-size:10px;font-weight:700;letter-spacing:2px;color:#ef4444;text-transform:uppercase;">Ronda 0</span></div>
-                    <h4 style="font-size:19px;font-weight:800;color:#fff;margin:0 0 4px;">Pre-requisitos</h4>
-                    <div style="font-size:12px;color:rgba(239,68,68,0.6);margin-bottom:24px;font-style:italic;">Antes de iniciar</div>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;">
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#ef4444;display:inline-block;margin-top:7px;"></span>Todos los assets entregados</li>
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#ef4444;display:inline-block;margin-top:7px;"></span>Logo, fotos, textos completos</li>
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#ef4444;display:inline-block;margin-top:7px;"></span>Catálogo completo con precios</li>
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#ef4444;display:inline-block;margin-top:7px;"></span>Sin assets = sin inicio</li>
-                    </ul>
-                </div>
-                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(245,158,11,0.15);border-radius:20px;padding:32px;position:relative;overflow:hidden;">
-                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#f59e0b,rgba(245,158,11,0.15));"></div>
-                    <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.2);border-radius:6px;padding:4px 11px;margin-bottom:20px;"><span style="font-size:10px;font-weight:700;letter-spacing:2px;color:#f59e0b;text-transform:uppercase;">Ronda 1</span></div>
-                    <h4 style="font-size:19px;font-weight:800;color:#fff;margin:0 0 4px;">Preview Inicial</h4>
-                    <div style="font-size:12px;color:rgba(245,158,11,0.6);margin-bottom:24px;font-style:italic;">Día 3</div>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;">
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#f59e0b;display:inline-block;margin-top:7px;"></span>Preview completo de la tienda</li>
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#f59e0b;display:inline-block;margin-top:7px;"></span>24–48h para revisar</li>
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#f59e0b;display:inline-block;margin-top:7px;"></span>Feedback en un único doc</li>
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#f59e0b;display:inline-block;margin-top:7px;"></span>No se aceptan mensajes sueltos</li>
-                    </ul>
-                </div>
-                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(16,185,129,0.15);border-radius:20px;padding:32px;position:relative;overflow:hidden;">
-                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#10b981,rgba(16,185,129,0.15));"></div>
-                    <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);border-radius:6px;padding:4px 11px;margin-bottom:20px;"><span style="font-size:10px;font-weight:700;letter-spacing:2px;color:#10b981;text-transform:uppercase;">Ronda 2</span></div>
-                    <h4 style="font-size:19px;font-weight:800;color:#fff;margin:0 0 4px;">Correcciones</h4>
-                    <div style="font-size:12px;color:rgba(16,185,129,0.6);margin-bottom:24px;font-style:italic;">Día 4</div>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;">
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#10b981;display:inline-block;margin-top:7px;"></span>Colores y espaciados</li>
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#10b981;display:inline-block;margin-top:7px;"></span>Reordenar secciones</li>
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#10b981;display:inline-block;margin-top:7px;"></span>Textos e imágenes</li>
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#10b981;display:inline-block;margin-top:7px;"></span>Corrección de productos</li>
-                    </ul>
-                </div>
-                <div class="fade-in" style="background:rgba(255,255,255,0.03);border:1px solid rgba(124,58,237,0.15);border-radius:20px;padding:32px;position:relative;overflow:hidden;">
-                    <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#7c3aed,rgba(124,58,237,0.15));"></div>
-                    <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.2);border-radius:6px;padding:4px 11px;margin-bottom:20px;"><span style="font-size:10px;font-weight:700;letter-spacing:2px;color:#7c3aed;text-transform:uppercase;">Ronda 3</span></div>
-                    <h4 style="font-size:19px;font-weight:800;color:#fff;margin:0 0 4px;">Ajustes Finales</h4>
-                    <div style="font-size:12px;color:rgba(124,58,237,0.6);margin-bottom:24px;font-style:italic;">Día 5</div>
-                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;">
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#7c3aed;display:inline-block;margin-top:7px;"></span>Solo detalles menores</li>
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#7c3aed;display:inline-block;margin-top:7px;"></span>Typos y links rotos</li>
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#7c3aed;display:inline-block;margin-top:7px;"></span>Cambios de imagen puntuales</li>
-                        <li style="font-size:13px;color:rgba(255,255,255,0.45);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;width:4px;height:4px;border-radius:50%;background:#7c3aed;display:inline-block;margin-top:7px;"></span>Estructurales = nuevo presupuesto</li>
-                    </ul>
-                </div>
-            </div>
+                <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
+                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Cuánto tiempo tarda realmente? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Entre 7 y 15 días hábiles desde que nos entregás todos los assets completos. La mayoría de proyectos Starter cierran en 7 días.</div>
+                </details>
 
-            <!-- Bottom note -->
-            <div style="margin-top:40px;background:rgba(124,58,237,0.05);border:1px solid rgba(124,58,237,0.14);border-radius:16px;padding:24px 32px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
-                <div style="font-size:24px;flex-shrink:0;">💡</div>
-                <div style="flex:1;">
-                    <div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:4px;">Proceso diseñado para tu tranquilidad</div>
-                    <div style="font-size:13px;color:rgba(255,255,255,0.37);">Cada ronda tiene alcance definido. Nada queda abierto a interpretación. Menos estrés, más resultados, en menos tiempo.</div>
-                </div>
-                <a href="#contacto" style="background:rgba(124,58,237,0.2);border:1px solid rgba(124,58,237,0.35);color:#a78bfa;padding:12px 24px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap;flex-shrink:0;">Ver paquetes →</a>
+                <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
+                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Cuántas correcciones puedo pedir? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">3 rondas estructuradas: un preview inicial, correcciones generales y ajustes finales. Sin idas y vueltas infinitas — así terminamos en el tiempo prometido.</div>
+                </details>
+
+                <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
+                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Shopify tiene costo adicional? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Sí, Shopify cobra desde $25/mes directamente a vos. Te asesoramos en qué plan elegir según tu volumen de ventas.</div>
+                </details>
+
+                <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
+                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Qué pasa después del lanzamiento? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Incluís soporte de 2 a 4 semanas según tu plan. Luego podés contratar mantenimiento mensual desde $100 USD para updates y nuevas secciones.</div>
+                </details>
+
+                <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
+                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Puedo migrar mi tienda actual? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Sí. Migramos desde WooCommerce, Tiendanube, Wix u otras plataformas — productos, colecciones e imágenes incluidos.</div>
+                </details>
+
+                <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
+                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Funciona para cualquier tipo de producto? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Sí — físicos, digitales, servicios o suscripciones. Si se puede vender online, lo montamos en Shopify.</div>
+                </details>
+
+                <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
+                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Cómo son los pagos? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">50% al inicio del proyecto, 50% al lanzamiento. Aceptamos transferencia bancaria, Payoneer y tarjeta de crédito internacional.</div>
+                </details>
+
             </div>
         </div>
     </section>
@@ -2177,10 +1505,10 @@
             <div class="footer-col">
                 <h3>Servicios</h3>
                 <ul>
-                    <li><a href="#servicios">Desarrollo Web</a></li>
-                    <li><a href="#servicios">E-commerce</a></li>
-                    <li><a href="#servicios">Diseño UI/UX</a></li>
-                    <li><a href="#servicios">SEO</a></li>
+                    <li><a href="servicios.html">Desarrollo Web</a></li>
+                    <li><a href="servicios.html">E-commerce</a></li>
+                    <li><a href="servicios.html">Diseño UI/UX</a></li>
+                    <li><a href="servicios.html">SEO</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -2328,14 +1656,12 @@
         // and back exactly like Takt.
         // -----------------------------------------------------------------------
 
-        // Stops que siguen el recorrido real de la página
+        // Stops que siguen el recorrido real de la página (versión simplificada)
         const colorStops = [
-            { bg: [0,   0,   0  ], text: [255, 255, 255], id: 'home'            }, // 1. Negro   (Hero)
-            { bg: [248, 248, 248], text: [15,  23,  42 ], id: 'comparacion'     }, // 2. Blanco  (Comparación)
-            { bg: [252, 252, 252], text: [15,  23,  42 ], id: 'como-funciona'   }, // 3. Blanco  (Cómo funciona)
-            { bg: [5,   8,  16  ], text: [255, 255, 255], id: 'pre-requisitos'  }, // 4. Oscuro  (Pre-req + Proceso)
-            { bg: [255, 255, 255], text: [15,  23,  42 ], id: 'resultados'      }, // 5. Blanco  (Results + Cases + Team + CTA)
-            { bg: [10,  10,  20 ], text: [255, 255, 255], id: 'precios'         }, // 6. Oscuro  (Pricing + Footer + Correcciones)
+            { bg: [0,   0,   0  ], text: [255, 255, 255], id: 'home'       }, // 1. Negro  (Hero + Stats)
+            { bg: [248, 248, 248], text: [15,  23,  42 ], id: 'comparacion'}, // 2. Blanco (Comparación + Cómo funciona + Templates)
+            { bg: [10,  10,  20 ], text: [255, 255, 255], id: 'precios'    }, // 3. Oscuro (Precios + FAQ)
+            { bg: [255, 255, 255], text: [15,  23,  42 ], id: 'contacto'   }, // 4. Blanco (CTA + Footer)
         ];
 
         function lerp(a, b, t) { return a + (b - a) * t; }
@@ -2386,7 +1712,7 @@
             document.body.style.color      = rgb(textColor);
 
             // Only tint sections that don't have their own fixed background
-            const fixedBgIds = ['templates','metricas'];
+            const fixedBgIds = ['templates','casos'];
             document.querySelectorAll('section').forEach(s => {
                 if (!fixedBgIds.includes(s.id)) {
                     s.style.background = 'transparent';
