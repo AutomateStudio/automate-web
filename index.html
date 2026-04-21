@@ -550,9 +550,7 @@
         /* CASE STUDIES — 3D perspective conveyor */
         .cases-stage {
             width: 100%;
-            height: 580px;
-            perspective: 1200px;
-            perspective-origin: center 50%;
+            height: 440px;
             overflow: hidden;
             margin-top: 60px;
             position: relative;
@@ -566,7 +564,6 @@
             display: flex;
             align-items: center;
             gap: 0;
-            transform-style: preserve-3d;
             animation: convey3d 28s linear infinite;
         }
         .cases-belt:hover { animation-play-state: paused; }
@@ -579,32 +576,20 @@
         /* Base card */
         .conv-card {
             flex-shrink: 0;
-            border-radius: 14px;
+            width: 300px;
+            height: 400px;
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 30px 80px rgba(0,0,0,0.6);
-            margin-right: -80px;
-            transition: box-shadow 0.3s, transform 0.3s;
+            margin-right: 16px;
+            transition: transform 0.35s, box-shadow 0.35s;
             position: relative;
             cursor: pointer;
-            transform-style: preserve-3d;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.4);
         }
         .conv-card:hover {
-            box-shadow: 0 50px 100px rgba(0,0,0,0.8);
-            z-index: 20;
+            transform: scale(1.03) translateY(-4px);
+            box-shadow: 0 24px 60px rgba(0,0,0,0.55);
         }
-
-        /* 3D depth + vertical offset per card */
-        .conv-card:nth-child(10n+1) { width: 420px; height: 320px; transform: translateZ(0px)    translateY(0px);   }
-        .conv-card:nth-child(10n+2) { width: 380px; height: 360px; transform: translateZ(-100px) translateY(80px);  }
-        .conv-card:nth-child(10n+3) { width: 460px; height: 340px; transform: translateZ(-200px) translateY(160px); }
-        .conv-card:nth-child(10n+4) { width: 390px; height: 380px; transform: translateZ(-300px) translateY(120px); }
-        .conv-card:nth-child(10n+5) { width: 440px; height: 300px; transform: translateZ(-400px) translateY(40px);  }
-
-        .conv-card:nth-child(10n+6) { width: 420px; height: 320px; transform: translateZ(0px)    translateY(0px);   }
-        .conv-card:nth-child(10n+7) { width: 380px; height: 360px; transform: translateZ(-100px) translateY(80px);  }
-        .conv-card:nth-child(10n+8) { width: 460px; height: 340px; transform: translateZ(-200px) translateY(160px); }
-        .conv-card:nth-child(10n+9) { width: 390px; height: 380px; transform: translateZ(-300px) translateY(120px); }
-        .conv-card:nth-child(10n+10) { width: 440px; height: 300px; transform: translateZ(-400px) translateY(40px); }
 
         /* Mockup browser chrome */
         .mockup-bar {
@@ -1342,52 +1327,52 @@
     </section>
 
     <!-- FAQ -->
-    <section id="faq" style="padding:120px 60px;">
+    <section id="faq" style="padding:120px 60px;background:#0d1117;">
         <div class="container">
             <div style="text-align:center;margin-bottom:56px;">
                 <div style="font-size:12px;font-weight:700;letter-spacing:3px;color:#3b82f6;text-transform:uppercase;margin-bottom:16px;">Preguntas frecuentes</div>
-                <h2 style="font-size:clamp(32px,4vw,52px);font-weight:900;letter-spacing:-1.5px;line-height:1.1;margin:0;">Todo lo que necesitás saber</h2>
+                <h2 style="font-size:clamp(32px,4vw,52px);font-weight:900;letter-spacing:-1.5px;line-height:1.1;margin:0;color:#fff;">Todo lo que necesitás saber</h2>
             </div>
             <div style="max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:8px;">
 
                 <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
-                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Qué necesito para empezar? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
-                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Logo, fotos de producto, catálogo completo (nombres, precios, variantes) y una cuenta Shopify activa. Si no tenés dominio, te ayudamos a elegir uno.</div>
+                    <summary style="color:#fff;padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Qué necesito para empezar? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="color:rgba(255,255,255,0.55);padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Logo, fotos de producto, catálogo completo (nombres, precios, variantes) y una cuenta Shopify activa. Si no tenés dominio, te ayudamos a elegir uno.</div>
                 </details>
 
                 <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
-                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Cuánto tiempo tarda realmente? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
-                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Entre 7 y 15 días hábiles desde que nos entregás todos los assets completos. La mayoría de proyectos Starter cierran en 7 días.</div>
+                    <summary style="color:#fff;padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Cuánto tiempo tarda realmente? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="color:rgba(255,255,255,0.55);padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Entre 7 y 15 días hábiles desde que nos entregás todos los assets completos. La mayoría de proyectos Starter cierran en 7 días.</div>
                 </details>
 
                 <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
-                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Cuántas correcciones puedo pedir? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
-                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">3 rondas estructuradas: un preview inicial, correcciones generales y ajustes finales. Sin idas y vueltas infinitas — así terminamos en el tiempo prometido.</div>
+                    <summary style="color:#fff;padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Cuántas correcciones puedo pedir? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="color:rgba(255,255,255,0.55);padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">3 rondas estructuradas: un preview inicial, correcciones generales y ajustes finales. Sin idas y vueltas infinitas — así terminamos en el tiempo prometido.</div>
                 </details>
 
                 <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
-                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Shopify tiene costo adicional? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
-                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Sí, Shopify cobra desde $25/mes directamente a vos. Te asesoramos en qué plan elegir según tu volumen de ventas.</div>
+                    <summary style="color:#fff;padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Shopify tiene costo adicional? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="color:rgba(255,255,255,0.55);padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Sí, Shopify cobra desde $25/mes directamente a vos. Te asesoramos en qué plan elegir según tu volumen de ventas.</div>
                 </details>
 
                 <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
-                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Qué pasa después del lanzamiento? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
-                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Incluís soporte de 2 a 4 semanas según tu plan. Luego podés contratar mantenimiento mensual desde $100 USD para updates y nuevas secciones.</div>
+                    <summary style="color:#fff;padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Qué pasa después del lanzamiento? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="color:rgba(255,255,255,0.55);padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Incluís soporte de 2 a 4 semanas según tu plan. Luego podés contratar mantenimiento mensual desde $100 USD para updates y nuevas secciones.</div>
                 </details>
 
                 <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
-                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Puedo migrar mi tienda actual? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
-                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Sí. Migramos desde WooCommerce, Tiendanube, Wix u otras plataformas — productos, colecciones e imágenes incluidos.</div>
+                    <summary style="color:#fff;padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Puedo migrar mi tienda actual? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="color:rgba(255,255,255,0.55);padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Sí. Migramos desde WooCommerce, Tiendanube, Wix u otras plataformas — productos, colecciones e imágenes incluidos.</div>
                 </details>
 
                 <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
-                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Funciona para cualquier tipo de producto? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
-                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Sí — físicos, digitales, servicios o suscripciones. Si se puede vender online, lo montamos en Shopify.</div>
+                    <summary style="color:#fff;padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Funciona para cualquier tipo de producto? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="color:rgba(255,255,255,0.55);padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">Sí — físicos, digitales, servicios o suscripciones. Si se puede vender online, lo montamos en Shopify.</div>
                 </details>
 
                 <details style="border:1px solid rgba(128,128,128,0.15);border-radius:14px;overflow:hidden;">
-                    <summary style="padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Cómo son los pagos? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
-                    <div style="padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">50% al inicio del proyecto, 50% al lanzamiento. Aceptamos transferencia bancaria, Payoneer y tarjeta de crédito internacional.</div>
+                    <summary style="color:#fff;padding:22px 28px;font-size:16px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">¿Cómo son los pagos? <span style="color:#3b82f6;font-size:18px;flex-shrink:0;">+</span></summary>
+                    <div style="color:rgba(255,255,255,0.55);padding:0 28px 22px;font-size:15px;line-height:1.75;opacity:0.65;">50% al inicio del proyecto, 50% al lanzamiento. Aceptamos transferencia bancaria, Payoneer y tarjeta de crédito internacional.</div>
                 </details>
 
             </div>
@@ -1620,7 +1605,7 @@
             document.body.style.color      = rgb(textColor);
 
             // Only tint sections that don't have their own fixed background
-            const fixedBgIds = ['casos'];
+            const fixedBgIds = ['casos','faq'];
             document.querySelectorAll('section').forEach(s => {
                 if (!fixedBgIds.includes(s.id)) {
                     s.style.background = 'transparent';
@@ -1734,7 +1719,7 @@
             projects.forEach(p => {
                 const card = document.createElement('div');
                 card.className = 'conv-card';
-                card.style.cssText = 'flex-shrink:0;width:300px;height:380px;border-radius:16px;overflow:hidden;position:relative;cursor:pointer;';
+                // sizing handled by CSS class
                 card.innerHTML = \`
                     <img src="\${base}\${p.cat}/\${p.tmpl}/hero.jpg"
                          style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;"
