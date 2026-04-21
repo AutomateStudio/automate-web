@@ -1695,18 +1695,18 @@
 
         // ─── CASE STUDIES: HTML/CSS WEBSITE MOCKUPS ──────────────────────────────
         const caseProjects = [
-            { name: 'July',      category: 'Belleza',      cat: 'beauty',      tmpl: 'july'      },
-            { name: 'Aura',      category: 'Moda',         cat: 'fashion',     tmpl: 'aura'      },
-            { name: 'Apex',      category: 'Deportes',     cat: 'sports',      tmpl: 'apex'      },
-            { name: 'Levain',    category: 'Gastronomía', cat: 'food',    tmpl: 'levain'    },
-            { name: 'Quantum',   category: 'Electrónica', cat: 'electronics', tmpl: 'quantum' },
-            { name: 'Haven',     category: 'Hogar',        cat: 'home',        tmpl: 'haven'     },
-            { name: 'Lumière', category: 'Joyería', cat: 'jewelry', tmpl: 'lumiere'  },
-            { name: 'Urban',     category: 'General',      cat: 'general',     tmpl: 'urban'     },
-            { name: 'Elegancia', category: 'Moda',         cat: 'fashion',     tmpl: 'elegancia' },
-            { name: 'Cosecha',   category: 'Gastronomía', cat: 'food',   tmpl: 'cosecha'   },
-            { name: 'Stride',    category: 'Deportes',     cat: 'sports',      tmpl: 'stride'    },
-            { name: 'Nordia',    category: 'Hogar',        cat: 'home',        tmpl: 'nordia'    },
+            { client: 'Lun\u00e9 Cosmetics',   industry: 'Belleza',      metric: '+187% conversiones',        days: '8 d\u00edas',  cat: 'beauty',      tmpl: 'july'      },
+            { client: 'Aura Studio',           industry: 'Moda',         metric: '100+ pedidos el 1\u00b0 mes', days: '10 d\u00edas', cat: 'fashion',     tmpl: 'aura'      },
+            { client: 'Apex Performance',      industry: 'Deportes',     metric: '+312% tr\u00e1fico org\u00e1nico', days: '7 d\u00edas', cat: 'sports', tmpl: 'apex'      },
+            { client: 'Le Petit Levain',       industry: 'Gastronom\u00eda', metric: 'Vendido en 3 pa\u00edses',  days: '9 d\u00edas',  cat: 'food',        tmpl: 'levain'    },
+            { client: 'Quantum Tech',          industry: 'Electr\u00f3nica', metric: '-68% costo por cliente',  days: '12 d\u00edas', cat: 'electronics', tmpl: 'quantum'   },
+            { client: 'Haven Living',          industry: 'Hogar',        metric: '+240% ticket promedio',      days: '8 d\u00edas',  cat: 'home',        tmpl: 'haven'     },
+            { client: 'Lumi\u00e8re Joyería', industry: 'Joyer\u00eda',  metric: '4.9\u2605 en 200+ rese\u00f1as', days: '11 d\u00edas', cat: 'jewelry', tmpl: 'lumiere'   },
+            { client: 'Urban Collective',      industry: 'General',      metric: '+89% ventas en 3 meses',     days: '7 d\u00edas',  cat: 'general',     tmpl: 'urban'     },
+            { client: 'Elegancia Boutique',    industry: 'Moda',         metric: '$0 a $40k USD en 60 d\u00edas', days: '10 d\u00edas', cat: 'fashion', tmpl: 'elegancia' },
+            { client: 'Cosecha Natural',       industry: 'Gastronom\u00eda', metric: '3x en retenci\u00f3n de clientes', days: '9 d\u00edas', cat: 'food', tmpl: 'cosecha' },
+            { client: 'Stride Running Co.',    industry: 'Deportes',     metric: '+156% en redes sociales',    days: '8 d\u00edas',  cat: 'sports',      tmpl: 'stride'    },
+            { client: 'Nordia Home',           industry: 'Hogar',        metric: 'Top 3 en Google Shopping',  days: '11 d\u00edas', cat: 'home',        tmpl: 'nordia'    },
         ];
 
         function generateCaseCards() {
@@ -1720,10 +1720,14 @@
                 var imgSrc = base + p.cat + '/' + p.tmpl + '/hero.jpg';
                 card.innerHTML =
                     '<img src="' + imgSrc + '" style="width:100%;height:100%;object-fit:cover;display:block;" loading="eager">' +
-                    '<div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.05) 55%,transparent 100%);pointer-events:none;"></div>' +
+                    '<div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.88) 0%,rgba(0,0,0,0.25) 50%,rgba(0,0,0,0.05) 100%);pointer-events:none;"></div>' +
+                    '<div style="position:absolute;top:16px;left:16px;background:rgba(255,255,255,0.12);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:5px 12px;font-size:10px;font-weight:700;color:#fff;letter-spacing:1.5px;text-transform:uppercase;">' + p.industry + '</div>' +
                     '<div style="position:absolute;bottom:0;left:0;right:0;padding:20px 18px;pointer-events:none;">' +
-                        '<div style="font-size:10px;color:rgba(255,255,255,0.55);font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:4px;">' + p.category + '</div>' +
-                        '<div style="font-size:19px;font-weight:900;color:#fff;letter-spacing:-0.5px;">' + p.name + '</div>' +
+                        '<div style="font-size:18px;font-weight:900;color:#fff;letter-spacing:-0.3px;margin-bottom:8px;">' + p.client + '</div>' +
+                        '<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">' +
+                            '<div style="font-size:12px;font-weight:700;color:#3b82f6;">' + p.metric + '</div>' +
+                            '<div style="font-size:11px;color:rgba(255,255,255,0.4);white-space:nowrap;">' + p.days + '</div>' +
+                        '</div>' +
                     '</div>';
                 belt.appendChild(card);
             });
