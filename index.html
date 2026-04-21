@@ -1552,8 +1552,9 @@
         // Stops que siguen el recorrido real de la página (versión simplificada)
         const colorStops = [
             { bg: [0,   0,   0  ], text: [255, 255, 255], id: 'home'       }, // 1. Negro  (Hero + Stats)
-            { bg: [248, 248, 248], text: [15,  23,  42 ], id: 'comparacion'}, // 2. Blanco (Comparación + Cómo funciona + Templates)
-            { bg: [10,  10,  20 ], text: [255, 255, 255], id: 'precios'    }, // 3. Oscuro (Precios + FAQ)
+            { bg: [248, 248, 248], text: [15,  23,  42 ], id: 'comparacion'}, // 2. Blanco (Comparación + Cómo funciona)
+            { bg: [0,   0,   0  ], text: [255, 255, 255], id: 'casos'      }, // 3. Negro  (Casos de éxito)
+            { bg: [10,  10,  20 ], text: [255, 255, 255], id: 'precios'    }, // 4. Oscuro (Precios + FAQ)
             { bg: [255, 255, 255], text: [15,  23,  42 ], id: 'contacto'   }, // 4. Blanco (CTA + Footer)
         ];
 
@@ -1605,7 +1606,7 @@
             document.body.style.color      = rgb(textColor);
 
             // Only tint sections that don't have their own fixed background
-            const fixedBgIds = ['casos','faq'];
+            const fixedBgIds = ['faq'];
             document.querySelectorAll('section').forEach(s => {
                 if (!fixedBgIds.includes(s.id)) {
                     s.style.background = 'transparent';
@@ -1709,29 +1710,21 @@
         ];
 
         function generateCaseCards() {
-            const belt = document.getElementById('casesBelt');
+            var belt = document.getElementById('casesBelt');
             if (!belt) return;
-            const base = 'https://raw.githubusercontent.com/AutomateStudio/onboarding-portal/feat/generated-template-images/public/images/templates/';
-
-            // Duplicate set for seamless infinite loop
-            const projects = [...caseProjects, ...caseProjects];
-
-            projects.forEach(p => {
-                const card = document.createElement('div');
+            var base = 'https://raw.githubusercontent.com/AutomateStudio/onboarding-portal/feat/generated-template-images/public/images/templates/';
+            var projects = caseProjects.concat(caseProjects);
+            projects.forEach(function(p) {
+                var card = document.createElement('div');
                 card.className = 'conv-card';
-                // sizing handled by CSS class
-                card.innerHTML = \`
-                    <img src="\${base}\${p.cat}/\${p.tmpl}/hero.jpg"
-                         style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;"
-                         loading="lazy"
-                         onmouseover="this.style.transform='scale(1.04)'"
-                         onmouseout="this.style.transform='scale(1)'">
-                    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0.1) 55%,transparent 100%);pointer-events:none;"></div>
-                    <div style="position:absolute;bottom:0;left:0;right:0;padding:22px 20px;pointer-events:none;">
-                        <div style="font-size:10px;color:rgba(255,255,255,0.55);font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:5px;">\${p.category}</div>
-                        <div style="font-size:20px;font-weight:900;color:#fff;letter-spacing:-0.5px;">\${p.name}</div>
-                    </div>
-                \`;
+                var imgSrc = base + p.cat + '/' + p.tmpl + '/hero.jpg';
+                card.innerHTML =
+                    '<img src="' + imgSrc + '" style="width:100%;height:100%;object-fit:cover;display:block;" loading="eager">' +
+                    '<div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.05) 55%,transparent 100%);pointer-events:none;"></div>' +
+                    '<div style="position:absolute;bottom:0;left:0;right:0;padding:20px 18px;pointer-events:none;">' +
+                        '<div style="font-size:10px;color:rgba(255,255,255,0.55);font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:4px;">' + p.category + '</div>' +
+                        '<div style="font-size:19px;font-weight:900;color:#fff;letter-spacing:-0.5px;">' + p.name + '</div>' +
+                    '</div>';
                 belt.appendChild(card);
             });
         }
