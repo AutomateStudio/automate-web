@@ -2328,11 +2328,14 @@
         // and back exactly like Takt.
         // -----------------------------------------------------------------------
 
-        // Solo 2 cambios de color: negro → blanco → negro
+        // Stops que siguen el recorrido real de la página
         const colorStops = [
-            { bg: [0,   0,   0  ], text: [255, 255, 255], id: 'home'      }, // 1. Negro (Hero + About + Services)
-            { bg: [255, 255, 255], text: [15,  23,  42 ], id: 'resultados'}, // 2. Blanco (Results + Cases + Team + CTA)
-            { bg: [10,  10,  20 ], text: [255, 255, 255], id: 'precios'   }, // 3. Negro oscuro (Pricing + Footer)
+            { bg: [0,   0,   0  ], text: [255, 255, 255], id: 'home'            }, // 1. Negro   (Hero)
+            { bg: [248, 248, 248], text: [15,  23,  42 ], id: 'comparacion'     }, // 2. Blanco  (Comparación)
+            { bg: [252, 252, 252], text: [15,  23,  42 ], id: 'como-funciona'   }, // 3. Blanco  (Cómo funciona)
+            { bg: [5,   8,  16  ], text: [255, 255, 255], id: 'pre-requisitos'  }, // 4. Oscuro  (Pre-req + Proceso)
+            { bg: [255, 255, 255], text: [15,  23,  42 ], id: 'resultados'      }, // 5. Blanco  (Results + Cases + Team + CTA)
+            { bg: [10,  10,  20 ], text: [255, 255, 255], id: 'precios'         }, // 6. Oscuro  (Pricing + Footer + Correcciones)
         ];
 
         function lerp(a, b, t) { return a + (b - a) * t; }
@@ -2383,7 +2386,7 @@
             document.body.style.color      = rgb(textColor);
 
             // Only tint sections that don't have their own fixed background
-            const fixedBgIds = ['comparacion','como-funciona','pre-requisitos','proceso-operativo','templates','metricas','precios','correcciones'];
+            const fixedBgIds = ['templates','metricas'];
             document.querySelectorAll('section').forEach(s => {
                 if (!fixedBgIds.includes(s.id)) {
                     s.style.background = 'transparent';
