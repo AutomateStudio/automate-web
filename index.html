@@ -1709,163 +1709,48 @@
 
         // ─── CASE STUDIES: HTML/CSS WEBSITE MOCKUPS ──────────────────────────────
         const caseProjects = [
-            {
-                title: 'Aura Moda', category: 'Moda de Lujo', url: 'www.auramoda.co',
-                accent: '#c9a96e', bg: '#0d0d0d', text: '#f5f0e8',
-                nav: ['Inicio','Colección','Diseñadores','Contacto'],
-                hero: 'Nueva Colección\nPrimavera 2025',
-                sub: 'Piezas únicas para mujeres únicas',
-                products: [
-                    { name: 'Vestido Seda', price: '$890.000', tag: 'NUEVO' },
-                    { name: 'Blazer Lino', price: '$650.000', tag: '' },
-                    { name: 'Conjunto Noche', price: '$1.200.000', tag: 'EXCLUSIVO' },
-                ]
-            },
-            {
-                title: 'Apex Active', category: 'Ropa Deportiva', url: 'www.apexactive.com.co',
-                accent: '#00e5ff', bg: '#0a1628', text: '#ffffff',
-                nav: ['Inicio','Tienda','Entrenamiento','Blog'],
-                hero: 'Supera Tus\nLímites',
-                sub: 'Gear de alto rendimiento para atletas reales',
-                products: [
-                    { name: 'Camiseta Pro', price: '$89.000', tag: 'BESTSELLER' },
-                    { name: 'Licra Compresión', price: '$145.000', tag: '' },
-                    { name: 'Kit Gym', price: '$320.000', tag: '-20%' },
-                ]
-            },
-            {
-                title: 'Aurelia', category: 'Skincare Premium', url: 'www.aurelia.co',
-                accent: '#d4a0a0', bg: '#faf7f5', text: '#2d2d2d',
-                nav: ['Inicio','Rutinas','Ingredientes','Blog'],
-                hero: 'Tu Piel,\nNuestra Pasión',
-                sub: 'Fórmulas con ingredientes naturales de Colombia',
-                products: [
-                    { name: 'Sérum Vitamina C', price: '$185.000', tag: 'AGOTADO' },
-                    { name: 'Crema Hidratante', price: '$120.000', tag: 'NUEVO' },
-                    { name: 'Kit Noche', price: '$390.000', tag: 'KIT' },
-                ]
-            },
-            {
-                title: 'Villa Design', category: 'Muebles & Hogar', url: 'www.villadesign.co',
-                accent: '#8b6914', bg: '#1a1510', text: '#f2ead8',
-                nav: ['Inicio','Catálogo','Proyectos','Contacto'],
-                hero: 'Diseña\ntu Espacio',
-                sub: 'Muebles artesanales fabricados en Colombia',
-                products: [
-                    { name: 'Sofá Oslo', price: '$2.800.000', tag: 'OFERTA' },
-                    { name: 'Mesa Roble', price: '$1.450.000', tag: '' },
-                    { name: 'Silla Eames', price: '$890.000', tag: 'POPULAR' },
-                ]
-            },
-            {
-                title: 'Urban Vibes', category: 'Streetwear', url: 'www.urbanvibes.co',
-                accent: '#f5c518', bg: '#111111', text: '#ffffff',
-                nav: ['Drops','Tienda','Lookbook','About'],
-                hero: 'Tu Estilo,\nTu Regla',
-                sub: 'Drops exclusivos cada semana — sé el primero',
-                products: [
-                    { name: 'Hoodie UV001', price: '$195.000', tag: 'DROP' },
-                    { name: 'Cargo Pants', price: '$245.000', tag: 'LIMITADO' },
-                    { name: 'Sneakers V2', price: '$380.000', tag: 'NUEVO' },
-                ]
-            }
+            { name: 'July',      category: 'Belleza',      cat: 'beauty',      tmpl: 'july'      },
+            { name: 'Aura',      category: 'Moda',         cat: 'fashion',     tmpl: 'aura'      },
+            { name: 'Apex',      category: 'Deportes',     cat: 'sports',      tmpl: 'apex'      },
+            { name: 'Levain',    category: 'Gastronomía', cat: 'food',    tmpl: 'levain'    },
+            { name: 'Quantum',   category: 'Electrónica', cat: 'electronics', tmpl: 'quantum' },
+            { name: 'Haven',     category: 'Hogar',        cat: 'home',        tmpl: 'haven'     },
+            { name: 'Lumière', category: 'Joyería', cat: 'jewelry', tmpl: 'lumiere'  },
+            { name: 'Urban',     category: 'General',      cat: 'general',     tmpl: 'urban'     },
+            { name: 'Elegancia', category: 'Moda',         cat: 'fashion',     tmpl: 'elegancia' },
+            { name: 'Cosecha',   category: 'Gastronomía', cat: 'food',   tmpl: 'cosecha'   },
+            { name: 'Stride',    category: 'Deportes',     cat: 'sports',      tmpl: 'stride'    },
+            { name: 'Nordia',    category: 'Hogar',        cat: 'home',        tmpl: 'nordia'    },
         ];
 
-        function buildWebsiteMockup(p) {
-            const isDark = p.bg !== '#faf7f5';
-            const borderColor = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)';
-            const subTextColor = isDark ? 'rgba(255,255,255,0.55)' : 'rgba(0,0,0,0.5)';
-            const cardBg = isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.04)';
-            const navLinks = p.nav.map(n =>
-                `<span style="font-size:9px;opacity:0.65;cursor:pointer;white-space:nowrap">${n}</span>`
-            ).join('');
-
-            const productCards = p.products.map(prod => `
-                <div style="background:${cardBg};border-radius:6px;padding:10px;border:1px solid ${borderColor};">
-                    <div style="width:100%;height:52px;border-radius:4px;background:${p.accent}22;margin-bottom:8px;display:flex;align-items:center;justify-content:center;">
-                        <span style="font-size:18px;opacity:0.4">${prod.name.charAt(0)}</span>
-                    </div>
-                    <div style="font-size:9px;font-weight:600;color:${p.text};margin-bottom:3px;line-height:1.2">${prod.name}</div>
-                    <div style="display:flex;justify-content:space-between;align-items:center;">
-                        <span style="font-size:10px;font-weight:800;color:${p.accent}">${prod.price}</span>
-                        ${prod.tag ? `<span style="font-size:7px;padding:2px 5px;background:${p.accent};color:${isDark?'#000':'#fff'};border-radius:3px;font-weight:700">${prod.tag}</span>` : ''}
-                    </div>
-                </div>
-            `).join('');
-
-            return `
-                <div style="width:100%;height:100%;background:${p.bg};display:flex;flex-direction:column;font-family:'Inter',sans-serif;overflow:hidden;">
-                    <!-- NAV -->
-                    <div style="padding:10px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid ${borderColor};flex-shrink:0">
-                        <span style="font-size:12px;font-weight:900;letter-spacing:-0.5px;color:${p.text}">${p.title}</span>
-                        <div style="display:flex;gap:14px;align-items:center">${navLinks}</div>
-                        <div style="display:flex;gap:8px;align-items:center">
-                            <div style="width:22px;height:22px;border-radius:4px;background:${p.accent};display:flex;align-items:center;justify-content:center;font-size:11px">🛒</div>
-                        </div>
-                    </div>
-                    <!-- HERO -->
-                    <div style="padding:18px 16px 14px;border-bottom:1px solid ${borderColor};flex-shrink:0;background:linear-gradient(135deg,${p.accent}15,transparent)">
-                        <div style="font-size:9px;font-weight:600;color:${p.accent};letter-spacing:2px;text-transform:uppercase;margin-bottom:6px">
-                            ✦ ${p.category}
-                        </div>
-                        <div style="font-size:18px;font-weight:900;color:${p.text};line-height:1.15;letter-spacing:-0.5px;white-space:pre-line;margin-bottom:7px">${p.hero}</div>
-                        <div style="font-size:9px;color:${subTextColor};margin-bottom:12px;line-height:1.4">${p.sub}</div>
-                        <div style="display:flex;gap:8px">
-                            <div style="padding:6px 14px;background:${p.accent};border-radius:5px;font-size:9px;font-weight:700;color:${isDark?'#000':'#fff'}">Comprar Ahora</div>
-                            <div style="padding:6px 14px;border:1px solid ${borderColor};border-radius:5px;font-size:9px;font-weight:600;color:${p.text};opacity:0.7">Ver Todo</div>
-                        </div>
-                    </div>
-                    <!-- PRODUCTS -->
-                    <div style="padding:12px 16px;flex:1;overflow:hidden">
-                        <div style="font-size:9px;font-weight:700;color:${p.text};opacity:0.5;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px">PRODUCTOS DESTACADOS</div>
-                        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">${productCards}</div>
-                    </div>
-                    <!-- FOOTER BAR -->
-                    <div style="padding:8px 16px;border-top:1px solid ${borderColor};display:flex;align-items:center;justify-content:space-between;flex-shrink:0">
-                        <span style="font-size:8px;color:${subTextColor}">${p.url}</span>
-                        <div style="display:flex;gap:6px">
-                            <span style="font-size:8px;padding:3px 8px;border:1px solid ${borderColor};border-radius:3px;color:${subTextColor}">Instagram</span>
-                            <span style="font-size:8px;padding:3px 8px;border:1px solid ${borderColor};border-radius:3px;color:${subTextColor}">WhatsApp</span>
-                        </div>
-                    </div>
-                </div>
-            `;
-        }
-
         function generateCaseCards() {
-            const beltElement = document.getElementById('casesBelt');
-            if (!beltElement) return;
+            const belt = document.getElementById('casesBelt');
+            if (!belt) return;
+            const base = 'https://raw.githubusercontent.com/AutomateStudio/onboarding-portal/feat/generated-template-images/public/images/templates/';
 
-            for (let i = 0; i < 10; i++) {
-                const project = caseProjects[i % 5];
+            // Duplicate set for seamless infinite loop
+            const projects = [...caseProjects, ...caseProjects];
+
+            projects.forEach(p => {
                 const card = document.createElement('div');
                 card.className = 'conv-card';
-
-                // Browser chrome bar
-                const mockupBar = document.createElement('div');
-                mockupBar.className = 'mockup-bar';
-                mockupBar.innerHTML = `
-                    <div class="mockup-dot" style="background:#ff5f57"></div>
-                    <div class="mockup-dot" style="background:#ffbd2e"></div>
-                    <div class="mockup-dot" style="background:#28c840"></div>
-                    <div class="mockup-url" style="font-size:8px;color:rgba(255,255,255,0.4);display:flex;align-items:center;padding:0 8px;letter-spacing:0.3px">
-                        🔒 ${project.url}
+                card.style.cssText = 'flex-shrink:0;width:300px;height:380px;border-radius:16px;overflow:hidden;position:relative;cursor:pointer;';
+                card.innerHTML = \`
+                    <img src="\${base}\${p.cat}/\${p.tmpl}/hero.jpg"
+                         style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;"
+                         loading="lazy"
+                         onmouseover="this.style.transform='scale(1.04)'"
+                         onmouseout="this.style.transform='scale(1)'">
+                    <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0.1) 55%,transparent 100%);pointer-events:none;"></div>
+                    <div style="position:absolute;bottom:0;left:0;right:0;padding:22px 20px;pointer-events:none;">
+                        <div style="font-size:10px;color:rgba(255,255,255,0.55);font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:5px;">\${p.category}</div>
+                        <div style="font-size:20px;font-weight:900;color:#fff;letter-spacing:-0.5px;">\${p.name}</div>
                     </div>
-                `;
-
-                // Website mockup body
-                const mockupBody = document.createElement('div');
-                mockupBody.className = 'mockup-body';
-                mockupBody.style.cssText = 'padding:0;justify-content:flex-start;';
-                mockupBody.innerHTML = buildWebsiteMockup(project);
-
-                card.appendChild(mockupBar);
-                card.appendChild(mockupBody);
-                beltElement.appendChild(card);
-            }
+                \`;
+                belt.appendChild(card);
+            });
         }
 
-        // Generate cards on page load
         generateCaseCards();
 
         // ─── ANIMATED COUNTERS ────────────────────────────────────────────────
